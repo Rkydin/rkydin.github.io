@@ -9,9 +9,60 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="text-align: center; margin-bottom: 20px;">
-  <a href="{{ base_path }}/files/resume.pdf" onclick="return confirmDownload();" class="btn btn--primary" style="font-size: 1.2em; padding: 12px 24px;">
-    📄 Download Resume
+<style>
+.resume-download-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.resume-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
+
+/* Dark mode styles */
+.greedy-nav--dark .resume-download-btn,
+html.dark .resume-download-btn,
+body.dark .resume-download-btn {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.greedy-nav--dark .resume-download-btn:hover,
+html.dark .resume-download-btn:hover,
+body.dark .resume-download-btn:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Air theme compatibility */
+[data-theme="air"] .resume-download-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+[data-theme="air-dark"] .resume-download-btn {
+  background-color: #fff;
+  color: #000;
+}
+</style>
+
+<div style="text-align: center; margin-bottom: 30px; margin-top: 20px;">
+  <a href="{{ base_path }}/files/resume.pdf" onclick="return confirmDownload();" class="resume-download-btn">
+    📄 Download Resume PDF
   </a>
 </div>
 
