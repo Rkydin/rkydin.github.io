@@ -18,11 +18,6 @@ redirect_from:
   margin: 40px 0;
 }
 
-.projects-carousel h2 {
-  margin-bottom: 20px;
-  font-size: 1.8em;
-}
-
 .carousel-container {
   display: flex;
   overflow-x: auto;
@@ -53,11 +48,14 @@ redirect_from:
 .project-card {
   min-width: 350px;
   max-width: 350px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -66,7 +64,8 @@ redirect_from:
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.85);
   text-decoration: none;
 }
 
@@ -105,12 +104,49 @@ redirect_from:
   font-style: italic;
 }
 
+.portfolio-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  text-decoration: none !important;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.4);
+  text-decoration: none !important;
+}
+
+.portfolio-btn:focus,
+.portfolio-btn:active {
+  text-decoration: none !important;
+}
+
 /* Dark mode styles */
 html.dark .project-card,
 body.dark .project-card,
 .greedy-nav--dark .project-card {
-  background: #1a1a1a;
+  background: rgba(26, 26, 26, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+
+html.dark .project-card:hover,
+body.dark .project-card:hover,
+.greedy-nav--dark .project-card:hover {
+  background: rgba(26, 26, 26, 0.85);
 }
 
 html.dark .project-card h3,
@@ -136,14 +172,42 @@ body.dark .project-image,
 .greedy-nav--dark .project-image {
   background: #2a2a2a;
 }
+
+/* Dark mode button styles */
+.greedy-nav--dark .portfolio-btn,
+html.dark .portfolio-btn,
+body.dark .portfolio-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.greedy-nav--dark .portfolio-btn:hover,
+html.dark .portfolio-btn:hover,
+body.dark .portfolio-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="air"] .portfolio-btn {
+  background: rgba(255, 255, 255, 0.25);
+  color: #000;
+}
+
+[data-theme="air-dark"] .portfolio-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
 </style>
 
 <div class="intro-text">
   <p>I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about three years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.</p>
 </div>
 
+<hr>
+
 <div class="projects-carousel">
-  <h2>Featured Projects</h2>
   <div class="carousel-container">
     {% for post in site.portfolio %}
       <a href="{{ post.url | relative_url }}" class="project-card">
@@ -167,5 +231,7 @@ body.dark .project-image,
 </div>
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="/portfolio/" class="btn btn--primary" style="padding: 12px 30px; font-size: 1.1em;">View All Projects</a>
+  <a href="/portfolio/" class="portfolio-btn">
+    📁 View All Projects
+  </a>
 </div>
