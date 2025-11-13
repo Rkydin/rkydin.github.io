@@ -16,33 +16,18 @@ redirect_from:
 
 .projects-carousel {
   margin: 40px 0;
+  position: relative;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
 }
 
 .carousel-container {
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  transition: transform 0.5s ease;
   gap: 20px;
-  padding: 20px 0;
-  scrollbar-width: thin;
-}
-
-.carousel-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.carousel-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.carousel-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-.carousel-container::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .project-card {
@@ -60,6 +45,7 @@ redirect_from:
   color: inherit;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .project-card:hover {
@@ -102,6 +88,71 @@ redirect_from:
   font-size: 0.85em;
   color: #888;
   font-style: italic;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.carousel-nav:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.carousel-nav.prev {
+  left: -25px;
+}
+
+.carousel-nav.next {
+  right: -25px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.2);
 }
 
 .portfolio-btn {
@@ -182,19 +233,38 @@ body.dark .project-card p,
   color: #ccc;
 }
 
-html.dark .carousel-container::-webkit-scrollbar-track,
-body.dark .carousel-container::-webkit-scrollbar-track,
-.greedy-nav--dark .carousel-container::-webkit-scrollbar-track {
-  background: #333;
-}
-
 html.dark .project-image,
 body.dark .project-image,
 .greedy-nav--dark .project-image {
   background: #2a2a2a;
 }
 
-/* Dark mode button styles */
+html.dark .carousel-nav,
+body.dark .carousel-nav,
+.greedy-nav--dark .carousel-nav {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+html.dark .carousel-nav:hover,
+body.dark .carousel-nav:hover,
+.greedy-nav--dark .carousel-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html.dark .dot,
+body.dark .dot,
+.greedy-nav--dark .dot {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html.dark .dot.active,
+body.dark .dot.active,
+.greedy-nav--dark .dot.active {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .greedy-nav--dark .portfolio-btn,
 html.dark .portfolio-btn,
 body.dark .portfolio-btn {
@@ -211,7 +281,6 @@ body.dark .portfolio-btn:hover {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Dark mode Follow button */
 .greedy-nav--dark .author__urls.social-icons .btn,
 html.dark .author__urls.social-icons .btn,
 body.dark .author__urls.social-icons .btn {
@@ -246,26 +315,33 @@ body.dark .author__urls.social-icons .btn:hover {
 <hr>
 
 <div class="projects-carousel">
-  <div class="carousel-container">
-    {% for post in site.portfolio %}
-      <a href="{{ post.url | relative_url }}" class="project-card">
-        {% if post.header.teaser %}
-          <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
-        {% elsif post.image %}
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
-        {% else %}
-          <div class="project-image"></div>
-        {% endif %}
-        <div class="project-content">
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-          {% if post.date %}
-            <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+  <div class="carousel-wrapper">
+    <div class="carousel-nav prev" onclick="moveCarousel(-1)">‹</div>
+    <div class="carousel-nav next" onclick="moveCarousel(1)">›</div>
+    
+    <div class="carousel-container" id="carousel">
+      {% for post in site.portfolio %}
+        <a href="{{ post.url | relative_url }}" class="project-card">
+          {% if post.header.teaser %}
+            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
+          {% elsif post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
+          {% else %}
+            <div class="project-image"></div>
           {% endif %}
-        </div>
-      </a>
-    {% endfor %}
+          <div class="project-content">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+            {% if post.date %}
+              <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+            {% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
   </div>
+  
+  <div class="carousel-dots" id="dots"></div>
 </div>
 
 <div style="text-align: center; margin-top: 40px;">
@@ -273,3 +349,59 @@ body.dark .author__urls.social-icons .btn:hover {
     📁 View All Projects
   </a>
 </div>
+
+<script>
+let currentIndex = 0;
+const carousel = document.getElementById('carousel');
+const cards = carousel.querySelectorAll('.project-card');
+const totalCards = cards.length;
+const dotsContainer = document.getElementById('dots');
+
+// Create dots
+for (let i = 0; i < totalCards; i++) {
+  const dot = document.createElement('div');
+  dot.className = 'dot';
+  if (i === 0) dot.classList.add('active');
+  dot.onclick = () => goToSlide(i);
+  dotsContainer.appendChild(dot);
+}
+
+const dots = dotsContainer.querySelectorAll('.dot');
+
+function updateCarousel() {
+  const cardWidth = cards[0].offsetWidth;
+  const gap = 20;
+  const offset = -(currentIndex * (cardWidth + gap));
+  carousel.style.transform = `translateX(${offset}px)`;
+  
+  // Update dots
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+  
+  // Update navigation buttons
+  document.querySelector('.carousel-nav.prev').classList.toggle('disabled', currentIndex === 0);
+  document.querySelector('.carousel-nav.next').classList.toggle('disabled', currentIndex === totalCards - 1);
+}
+
+function moveCarousel(direction) {
+  currentIndex += direction;
+  if (currentIndex < 0) currentIndex = 0;
+  if (currentIndex >= totalCards) currentIndex = totalCards - 1;
+  updateCarousel();
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  updateCarousel();
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') moveCarousel(-1);
+  if (e.key === 'ArrowRight') moveCarousel(1);
+});
+
+// Initialize
+updateCarousel();
+</script>
