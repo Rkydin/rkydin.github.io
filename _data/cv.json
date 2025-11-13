@@ -31,7 +31,7 @@
       "institution": "Rutgers University, School of Engineering",
       "area": "B.S. Biomedical Engineering",
       "studyType": "",
-      "startDate": "",
+      "startDate": "2021",
       "endDate": "2025",
       "gpa": null,
       "courses": []
@@ -64,9 +64,7 @@
       "keywords": [
         "Python",
         "MATLAB",
-        "Arduino / C++",
-        "OpenCV (basic)",
-        "Git/GitHub"
+        "Arduino / C++"
       ]
     }
   ],
@@ -87,30 +85,30 @@
   "teaching": [],
   "portfolio": [
     {
-      "name": "ParaSwing – Wheelchair-mounted golf swing assist device",
+      "name": "ParaSwing - Wheelchair-mounted golf swing assist device",
       "category": "portfolio",
-      "date": "",
+      "date": "2024-2025",
       "url": "",
       "description": "Senior capstone project: designed and built a wheelchair-mounted robotic assist device to help users perform a repeatable golf swing. Responsible for mechanical design, CAD, prototyping, and hardware testing."
     },
     {
       "name": "Cable-driven gripper prototype",
       "category": "portfolio",
-      "date": "",
+      "date": "2024",
       "url": "",
       "description": "Designed a cable-driven, surgical-style gripper using 3D-printed components and tendon routing. Focus on linkage design, actuation, and compact mechanical layout."
     },
     {
-      "name": "BLDC-driven and servo-actuated Omni rc-car (in progress)",
+      "name": "BLDC-driven and servo-actuated Omni rc-car",
       "category": "portfolio",
-      "date": "",
+      "date": "2025-Present",
       "url": "",
       "description": "In-progress robotic vehicle using BLDC motors for drive power and a servo-actuated actuation system. Currently designing motor mounts, drivetrain layout, and control architecture for directional stability and modular testing."
     },
     {
       "name": "Desktop face recognition tool",
       "category": "portfolio",
-      "date": "",
+      "date": "2023",
       "url": "",
       "description": "Implemented a desktop face recognition application in Python using OpenCV and face recognition libraries, with a simple UI for enrolling and recognizing users from a webcam stream."
     }
