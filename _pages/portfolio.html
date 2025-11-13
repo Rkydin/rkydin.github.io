@@ -39,59 +39,64 @@ author_profile: true
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .portfolio-item:hover .portfolio-image {
   transform: scale(1.05);
+  filter: blur(3px);
 }
 
 .portfolio-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
-  padding: 30px 20px 20px 20px;
-  transition: all 0.3s ease;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .portfolio-item:hover .portfolio-overlay {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.4) 100%);
-  padding: 40px 20px 20px 20px;
+  opacity: 1;
 }
 
 .portfolio-title {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 10px 0;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   line-height: 1.3;
+  text-align: center;
 }
 
 .portfolio-excerpt {
   color: #fff;
-  font-size: 0.9em;
-  margin: 10px 0 0 0;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  line-height: 1.4;
-}
-
-.portfolio-item:hover .portfolio-excerpt {
+  font-size: 0.95em;
+  margin: 0;
   opacity: 0.95;
-  transform: translateY(0);
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-date {
   color: #fff;
   font-size: 0.85em;
-  margin-top: 8px;
-  opacity: 0.8;
+  margin-top: 10px;
+  opacity: 0.9;
   font-style: italic;
   display: block;
+  text-align: center;
 }
 
 /* Dark mode compatibility */
@@ -105,6 +110,12 @@ html.dark .portfolio-item:hover,
 body.dark .portfolio-item:hover,
 .greedy-nav--dark .portfolio-item:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .portfolio-overlay,
+body.dark .portfolio-overlay,
+.greedy-nav--dark .portfolio-overlay {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive adjustments */
@@ -125,7 +136,11 @@ body.dark .portfolio-item:hover,
   }
   
   .portfolio-title {
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+  
+  .portfolio-excerpt {
+    font-size: 0.9em;
   }
 }
 </style>
