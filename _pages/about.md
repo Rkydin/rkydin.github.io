@@ -142,10 +142,6 @@ body.dark .project-image,
   <p>I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about three years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.</p>
 </div>
 
-## What I Do
-
-I focus on mechanical design, prototyping, and hands-on hardware development. My work combines CAD design, 3D printing, and programming to create functional prototypes and robotic systems.
-
 <div class="projects-carousel">
   <h2>Featured Projects</h2>
   <div class="carousel-container">
