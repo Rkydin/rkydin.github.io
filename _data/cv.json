@@ -1,152 +1,118 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Ryan Kim",
+    "email": "rdky404@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://rkydin.github.io",
+    "summary": "Biomedical engineer with a strong focus on mechanical design, prototyping, and hands-on hardware development.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "New Jersey",
       "countryCode": "US",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Rkydin",
+        "url": "https://github.com/Rkydin"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ryandki",
+        "url": "https://www.linkedin.com/in/ryandki"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Rutgers University, School of Engineering",
+      "area": "B.S. Biomedical Engineering",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "2025",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Mechanical Design & CAD",
+      "level": "",
+      "keywords": [
+        "SolidWorks",
+        "3D printing",
+        "Rapid prototyping",
+        "Basic GD&T"
+      ]
+    },
+    {
+      "name": "Prototyping & Fabrication",
+      "level": "",
+      "keywords": [
+        "Hands-on assembly",
+        "Test setups",
+        "Basic machining",
+        "Electromechanical builds"
+      ]
+    },
+    {
+      "name": "Programming & Tools",
+      "level": "",
+      "keywords": [
+        "Python",
+        "MATLAB",
+        "Arduino / C++",
+        "OpenCV (basic)",
+        "Git/GitHub"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Mechanical design and robotics",
+      "keywords": []
+    },
+    {
+      "name": "Prototyping and hardware experiments",
+      "keywords": []
+    }
+  ],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
+      "name": "ParaSwing – Wheelchair-mounted golf swing assist device",
       "category": "portfolio",
       "date": "",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Senior capstone project: designed and built a wheelchair-mounted robotic assist device to help users perform a repeatable golf swing. Responsible for mechanical design, CAD, prototyping, and hardware testing."
+    },
+    {
+      "name": "Cable-driven gripper prototype",
+      "category": "portfolio",
+      "date": "",
+      "url": "",
+      "description": "Designed a cable-driven, surgical-style gripper using 3D-printed components and tendon routing. Focus on linkage design, actuation, and compact mechanical layout."
+    },
+    {
+      "name": "Arduino-based omnidirectional car",
+      "category": "portfolio",
+      "date": "",
+      "url": "",
+      "description": "Built a small omnidirectional vehicle using Arduino control, multiple DC/BLDC motors, and a custom chassis. Implemented basic motion control and tested multi-directional movement."
+    },
+    {
+      "name": "Desktop face recognition tool",
+      "category": "portfolio",
+      "date": "",
+      "url": "",
+      "description": "Implemented a desktop face recognition application in Python using OpenCV and face recognition libraries, with a simple UI for enrolling and recognizing users from a webcam stream."
     }
   ]
 }
