@@ -7,12 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about three years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.
-
-## What I Do
-
-I focus on mechanical design, prototyping, and hands-on hardware development. My work combines CAD design, 3D printing, and programming to create functional prototypes and robotic systems.
-
 <style>
 .intro-text {
   margin-bottom: 40px;
@@ -57,12 +51,12 @@ I focus on mechanical design, prototyping, and hands-on hardware development. My
 }
 
 .project-card {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 350px;
+  max-width: 350px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: inherit;
@@ -74,6 +68,20 @@ I focus on mechanical design, prototyping, and hands-on hardware development. My
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card h3 {
@@ -122,22 +130,41 @@ body.dark .carousel-container::-webkit-scrollbar-track,
 .greedy-nav--dark .carousel-container::-webkit-scrollbar-track {
   background: #333;
 }
+
+html.dark .project-image,
+body.dark .project-image,
+.greedy-nav--dark .project-image {
+  background: #2a2a2a;
+}
 </style>
 
 <div class="intro-text">
   <p>I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about three years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.</p>
 </div>
 
+## What I Do
+
+I focus on mechanical design, prototyping, and hands-on hardware development. My work combines CAD design, 3D printing, and programming to create functional prototypes and robotic systems.
+
 <div class="projects-carousel">
   <h2>Featured Projects</h2>
   <div class="carousel-container">
     {% for post in site.portfolio %}
       <a href="{{ post.url | relative_url }}" class="project-card">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        {% if post.date %}
-          <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+        {% if post.header.teaser %}
+          <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
+        {% elsif post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
+        {% else %}
+          <div class="project-image"></div>
         {% endif %}
+        <div class="project-content">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+          {% if post.date %}
+            <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+          {% endif %}
+        </div>
       </a>
     {% endfor %}
   </div>
