@@ -13,7 +13,7 @@ main:
     url: /portfolio/
         
   - title: "Resume"
-    url: /cv/
+    url: /Resume/
     
   # - title: "CV"
   #   url: /cv-json/
