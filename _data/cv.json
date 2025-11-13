@@ -101,11 +101,11 @@
       "description": "Designed a cable-driven, surgical-style gripper using 3D-printed components and tendon routing. Focus on linkage design, actuation, and compact mechanical layout."
     },
     {
-      "name": "Arduino-based omnidirectional car",
+      "name": "BLDC-driven and servo-actuated Omni rc-car (in progress)",
       "category": "portfolio",
       "date": "",
       "url": "",
-      "description": "Built a small omnidirectional vehicle using Arduino control, multiple DC/BLDC motors, and a custom chassis. Implemented basic motion control and tested multi-directional movement."
+      "description": "In-progress robotic vehicle using BLDC motors for drive power and a servo-actuated actuation system. Currently designing motor mounts, drivetrain layout, and control architecture for directional stability and modular testing."
     },
     {
       "name": "Desktop face recognition tool",
