@@ -134,6 +134,27 @@ redirect_from:
   text-decoration: none !important;
 }
 
+/* Glass Follow Button in Sidebar */
+.author__urls.social-icons .btn {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #000 !important;
+  text-decoration: none !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+.author__urls.social-icons .btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  text-decoration: none !important;
+}
+
 /* Dark mode styles */
 html.dark .project-card,
 body.dark .project-card,
@@ -188,6 +209,23 @@ html.dark .portfolio-btn:hover,
 body.dark .portfolio-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode Follow button */
+.greedy-nav--dark .author__urls.social-icons .btn,
+html.dark .author__urls.social-icons .btn,
+body.dark .author__urls.social-icons .btn {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.greedy-nav--dark .author__urls.social-icons .btn:hover,
+html.dark .author__urls.social-icons .btn:hover,
+body.dark .author__urls.social-icons .btn:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
 }
 
 [data-theme="air"] .portfolio-btn {
