@@ -5,7 +5,14 @@ date: 2025-05-01
 header:
   teaser: /images/face-recognition/main-menu.png
 collection: portfolio
+share: false
 ---
+
+<style>
+.page__share {
+  display: none !important;
+}
+</style>
 
 ## Project Overview
 
@@ -53,7 +60,7 @@ Developed a desktop face recognition application in Python that can enroll new u
 * **Persistent storage** using pickle files
 * **Multi-face detection** - recognizes multiple people simultaneously
 * **FPS counter** for performance monitoring
-* **Intuitive GUI** with clear instructions
+* **GUI**
 
 ## Technologies Used
 
@@ -90,11 +97,68 @@ The application captures frames from the webcam in real-time, detects faces in e
 1. User selects "Register New Face"
 2. Enter person's name
 3. Position face within the oval guide
-4. Press SPACE to capture multiple angles
+4. Press SPACE to capture
 5. Face encoding is generated and saved as `{name}.pkl`
 6. Person is now in the recognition database
 
 ### Face Database Management
 
 ![Registered Faces](/images/face-recognition/registered-faces.png)
-*View all enrolled faces with de
+*View all enrolled faces with delete options and add from file capability*
+
+The system provides a complete face management interface where you can:
+- View all registered faces
+- Delete faces with confirmation dialog
+- Add faces from image files
+- Navigate through pages if many faces are registered
+
+![Delete Confirmation](/images/face-recognition/delete-confirmation.png)
+*Safety confirmation before deleting a registered face*
+
+### Recognition in Action
+
+![Recognition Demo 1](/images/face-recognition/recognition-demo-1.png)
+*Real-time recognition with confidence percentages and FPS counter*
+
+![Recognition Demo 2](/images/face-recognition/recognition-demo-2.png)
+*System successfully detects and recognizes multiple faces simultaneously*
+
+The recognition system:
+1. Loads all known face encodings from disk on startup
+2. Captures live video stream from webcam
+3. Detects all faces in each frame
+4. Compares face encodings against known faces database
+5. Displays names with confidence percentages
+6. Shows real-time FPS performance
+
+## Technical Implementation
+
+**Face Storage System:**
+- Face encodings stored in: `known_faces/` directory
+- Each person's encoding saved as `{name}.pkl`
+- Persistent storage across program sessions
+- Add faces from existing image files
+
+**Performance:**
+- Real-time processing at ~15 FPS
+- Efficient face encoding comparison
+- Multi-face detection capability
+
+## Results
+
+Successfully created a fully-featured face recognition system that:
+- ✅ Automatically handles dependency installation
+- ✅ Provides complete face enrollment and management
+- ✅ Recognizes multiple faces simultaneously in real-time
+- ✅ Maintains persistent face database across sessions
+- ✅ Performs at real-time speeds (~15 FPS)
+
+## Skills Demonstrated
+
+* Python file I/O and serialization
+* Computer vision with OpenCV
+* Face recognition algorithms
+* GUI design and user experience
+* Error handling and validation
+* Performance optimization
+* Package management and dependencies
