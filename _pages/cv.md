@@ -3,6 +3,7 @@ layout: archive
 title: "Resume"
 permalink: /resume/
 author_profile: true
+cvjson: true
 redirect_from:
   - /resume
 ---
