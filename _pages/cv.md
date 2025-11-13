@@ -9,14 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="text-align: center; margin: 20px 0;">
-  <a href="{{ base_path }}/files/resume.pdf" onclick="return confirmDownload();" target="_blank">
-    <img src="{{ base_path }}/files/resume.pdf" alt="Resume" style="max-width: 100%; height: auto; border: 2px solid #ccc; cursor: pointer;" />
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="{{ base_path }}/files/resume.pdf" onclick="return confirmDownload();" class="btn btn--primary" style="font-size: 1.2em; padding: 12px 24px;">
+    📄 Download Resume
   </a>
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
-  <p><em>Click the resume image above to download</em></p>
+<div style="text-align: center; margin: 20px 0;">
+  <iframe src="https://docs.google.com/viewer?url=https://rkydin.github.io/files/resume.pdf&embedded=true" width="100%" height="1200px" style="border: none;"></iframe>
 </div>
 
 <script>
