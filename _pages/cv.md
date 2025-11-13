@@ -15,7 +15,7 @@ redirect_from:
   padding: 15px 40px;
   background-color: #000;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1.1em;
@@ -30,6 +30,12 @@ redirect_from:
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   background-color: #333;
+  text-decoration: none !important;
+}
+
+.resume-download-btn:focus,
+.resume-download-btn:active {
+  text-decoration: none !important;
 }
 
 /* Dark mode styles */
