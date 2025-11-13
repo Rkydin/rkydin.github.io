@@ -4,35 +4,6 @@ excerpt: "Python application using OpenCV and face_recognition library with a Tk
 date: 2025-05-01
 header:
   teaser: /images/face-recognition/main-menu.png
-gallery:
-  - url: /images/face-recognition/main-menu.png
-    image_path: /images/face-recognition/main-menu.png
-    alt: "Main menu interface"
-    title: "Face Recognition System main menu"
-  - url: /images/face-recognition/name-entry.png
-    image_path: /images/face-recognition/name-entry.png
-    alt: "Name entry screen"
-    title: "Enter person's name before enrollment"
-  - url: /images/face-recognition/face-capture.png
-    image_path: /images/face-recognition/face-capture.png
-    alt: "Face capture in progress"
-    title: "Face positioning and capture interface"
-  - url: /images/face-recognition/registered-faces.png
-    image_path: /images/face-recognition/registered-faces.png
-    alt: "Registered faces database"
-    title: "View and manage enrolled faces"
-  - url: /images/face-recognition/delete-confirmation.png
-    image_path: /images/face-recognition/delete-confirmation.png
-    alt: "Delete confirmation dialog"
-    title: "Confirmation popup when deleting a registered face"
-  - url: /images/face-recognition/recognition-demo-1.png
-    image_path: /images/face-recognition/recognition-demo-1.png
-    alt: "Recognition demo with Elon and Trump"
-    title: "Real-time face recognition with confidence scores"
-  - url: /images/face-recognition/recognition-demo-2.png
-    image_path: /images/face-recognition/recognition-demo-2.png
-    alt: "Recognition demo with Anne and Keanu"
-    title: "Multi-face detection and recognition"
 collection: portfolio
 ---
 
@@ -42,7 +13,36 @@ Developed a desktop face recognition application in Python that can enroll new u
 
 ## Project Gallery
 
-{% include gallery caption="Face Recognition System Interface and Demo" %}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="/images/face-recognition/main-menu.png" alt="Main menu" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Face Recognition System main menu</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/name-entry.png" alt="Name entry" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Enter person's name before enrollment</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/face-capture.png" alt="Face capture" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Face positioning and capture interface</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/registered-faces.png" alt="Registered faces" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>View and manage enrolled faces</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/delete-confirmation.png" alt="Delete confirmation" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Confirmation popup when deleting</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/recognition-demo-1.png" alt="Recognition demo 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Real-time recognition with confidence scores</em></p>
+  </div>
+  <div>
+    <img src="/images/face-recognition/recognition-demo-2.png" alt="Recognition demo 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;"><em>Multi-face detection and recognition</em></p>
+  </div>
+</div>
 
 ## Key Features
 
@@ -97,96 +97,4 @@ The application captures frames from the webcam in real-time, detects faces in e
 ### Face Database Management
 
 ![Registered Faces](/images/face-recognition/registered-faces.png)
-*View all enrolled faces with delete options and add from file capability*
-
-The system provides a complete face management interface where you can:
-- View all registered faces
-- Delete faces with confirmation dialog
-- Add faces from image files
-- Navigate through pages if many faces are registered
-
-![Delete Confirmation](/images/face-recognition/delete-confirmation.png)
-*Safety confirmation before deleting a registered face*
-
-### Recognition in Action
-
-![Recognition Demo 1](/images/face-recognition/recognition-demo-1.png)
-*Real-time recognition with confidence percentages and FPS counter*
-
-![Recognition Demo 2](/images/face-recognition/recognition-demo-2.png)
-*System successfully detects and recognizes multiple faces simultaneously*
-
-The recognition system:
-1. Loads all known face encodings from disk on startup
-2. Captures live video stream from webcam
-3. Detects all faces in each frame
-4. Compares face encodings against known faces database
-5. Displays names with confidence percentages
-6. Shows real-time FPS performance
-
-## Technical Implementation
-
-**Face Storage System:**
-- Face encodings stored in: `known_faces/` directory
-- Each person's encoding saved as `{name}.pkl`
-- Persistent storage across program sessions
-- Add faces from existing image files
-
-**Performance:**
-- Real-time processing at ~15 FPS
-- Efficient face encoding comparison
-- Multi-face detection capability
-- Confidence scoring for matches
-
-**Error Handling:**
-- Automatic package installation on first run
-- Camera initialization verification
-- Graceful error messages for troubleshooting
-- Confirmation dialogs for destructive actions
-
-## Challenges & Solutions
-
-**Challenge:** Ensuring all required packages are installed  
-**Solution:** Implemented automatic package detection and installation system that checks for missing dependencies and installs them using pip
-
-**Challenge:** Creating an intuitive user interface  
-**Solution:** Designed a clean menu system with clear instructions and visual guides (like the oval face positioning guide)
-
-**Challenge:** Managing face database efficiently  
-**Solution:** Used pickle serialization for fast save/load operations and created a dedicated management interface
-
-**Challenge:** Maintaining good performance with real-time recognition  
-**Solution:** Optimized face detection and encoding comparison, achieving ~15 FPS with multiple faces
-
-## Results
-
-Successfully created a fully-featured face recognition system that:
-- ✅ Automatically handles dependency installation
-- ✅ Provides complete face enrollment and management
-- ✅ Recognizes multiple faces simultaneously in real-time
-- ✅ Shows confidence scores for recognition accuracy
-- ✅ Maintains persistent face database across sessions
-- ✅ Offers intuitive GUI for all operations
-- ✅ Performs at real-time speeds (~15 FPS)
-
-## Skills Demonstrated
-
-* Python file I/O and serialization
-* Computer vision with OpenCV
-* Face recognition algorithms
-* GUI design and user experience
-* Error handling and validation
-* Performance optimization
-* Package management and dependencies
-* Real-time video processing
-
-## Future Improvements
-
-* Add training mode with multiple face angles
-* Implement adjustable confidence thresholds
-* Add face anti-spoofing features
-* Export/import face databases
-* Add facial expression recognition
-* Support for multiple camera sources
-* Enhanced GUI with more customization options
-* Add logging and usage statistics
+*View all enrolled faces with de
