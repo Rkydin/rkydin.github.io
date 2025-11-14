@@ -1,14 +1,30 @@
 @media (max-width: 768px) {
+  /* Show hamburger button */
+  .greedy-nav__toggle {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+  
+  .greedy-nav__toggle-open,
+  .greedy-nav__toggle-close {
+    display: block;
+  }
+  
+  /* Hide visible links */
   .greedy-nav .visible-links {
     display: none !important;
   }
   
-  .greedy-nav__toggle {
-    display: block !important;
-  }
-  
+  /* Style hidden links menu */
   .greedy-nav .hidden-links {
-    display: block !important;
     position: absolute;
     top: 100%;
     right: 0;
@@ -19,21 +35,42 @@
     margin-top: 5px;
     border-radius: 4px;
     z-index: 1000;
+    min-width: 200px;
+    display: none;
+  }
+  
+  .greedy-nav .hidden-links.hidden {
+    display: none !important;
+  }
+  
+  button[aria-expanded="true"] + .hidden-links {
+    display: block !important;
+  }
+  
+  .greedy-nav .hidden-links li {
+    display: block !important;
   }
   
   .greedy-nav .hidden-links a {
     display: block !important;
     padding: 10px 20px;
     border-bottom: 1px solid #eee;
+    text-decoration: none;
   }
   
   .greedy-nav .hidden-links a:last-child {
     border-bottom: none;
   }
   
+  /* Dark mode */
   html.dark .greedy-nav .hidden-links,
   body.dark .greedy-nav .hidden-links {
     background: #1a1a1a;
     border-color: #333;
+  }
+  
+  html.dark .greedy-nav .hidden-links a,
+  body.dark .greedy-nav .hidden-links a {
+    border-bottom-color: #333;
   }
 }
