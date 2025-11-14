@@ -2,32 +2,43 @@
 layout: single
 ---
 
-{{ content }}
-
-{% if site.portfolio.size > 1 %}
 <style>
-.other-projects-section {
-  margin-top: 3em;
-  padding-top: 2em;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+  align-items: start;
 }
 
-.other-projects-section h2 {
-  font-size: 1.5em;
-  margin-bottom: 25px;
+.portfolio-main-content {
+  min-width: 0;
+}
+
+.other-projects-sidebar {
+  position: sticky;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.other-projects-sidebar h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
   color: #fff;
   font-weight: 600;
 }
 
 .other-projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .other-project-item {
   position: relative;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.05);
@@ -40,9 +51,9 @@ layout: single
 }
 
 .other-project-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -54,38 +65,32 @@ layout: single
 }
 
 .other-project-item:hover .other-project-image {
-  filter: blur(3px);
+  filter: blur(2px);
   transform: scale(1.05);
 }
 
 .other-project-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.other-project-item:hover .other-project-overlay {
-  opacity: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3));
+  padding: 12px;
 }
 
 .other-project-title {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 600;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   line-height: 1.3;
-  text-align: center;
+}
+
+html.dark .other-projects-sidebar,
+body.dark .other-projects-sidebar {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 html.dark .other-project-item,
@@ -99,30 +104,44 @@ body.dark .other-project-item:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-@media (max-width: 768px) {
-  .other-projects-grid {
+@media (max-width: 1024px) {
+  .portfolio-container {
     grid-template-columns: 1fr;
+  }
+  
+  .other-projects-sidebar {
+    position: relative;
+    margin-top: 3em;
   }
 }
 </style>
 
-<div class="other-projects-section">
-  <h2>Other Projects</h2>
-  <div class="other-projects-grid">
-    {% for post in site.portfolio %}
-      {% if post.url != page.url %}
-        <a href="{{ post.url | relative_url }}" class="other-project-item">
-          {% if post.header.teaser %}
-            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="other-project-image">
-          {% elsif post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="other-project-image">
-          {% endif %}
-          <div class="other-project-overlay">
-            <div class="other-project-title">{{ post.title }}</div>
-          </div>
-        </a>
-      {% endif %}
-    {% endfor %}
+{% if site.portfolio.size > 1 %}
+<div class="portfolio-container">
+  <div class="portfolio-main-content">
+    {{ content }}
   </div>
+  
+  <aside class="other-projects-sidebar">
+    <h2>Other Projects</h2>
+    <div class="other-projects-grid">
+      {% for post in site.portfolio %}
+        {% if post.url != page.url %}
+          <a href="{{ post.url | relative_url }}" class="other-project-item">
+            {% if post.header.teaser %}
+              <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="other-project-image">
+            {% elsif post.image %}
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="other-project-image">
+            {% endif %}
+            <div class="other-project-overlay">
+              <div class="other-project-title">{{ post.title }}</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
 </div>
+{% else %}
+{{ content }}
 {% endif %}
