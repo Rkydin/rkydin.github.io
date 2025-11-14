@@ -204,6 +204,16 @@ body.dark .author__urls.social-icons .btn:hover {
     gap: 15px;
   }
 }
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: block !important;
+  }
+}
+  
 </style>
 
 <div class="intro-text">
