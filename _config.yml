@@ -125,7 +125,7 @@ atom_feed:
   hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 head_scripts:
-  - /assets/css/custom.css
+  - https://rkydin.github.io/assets/css/custom.css
 
 # SEO Related
 google_site_verification :
