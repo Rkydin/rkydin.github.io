@@ -3,7 +3,6 @@ layout: single
 ---
 
 <style>
-/* Override page max-width to use full screen */
 .page {
   max-width: 100% !important;
   width: 100% !important;
@@ -153,4 +152,17 @@ body.dark .other-project-item:hover {
             {% if post.header.teaser %}
               <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="other-project-image">
             {% elsif post.image %}
-              <img src="{{ post
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="other-project-image">
+            {% endif %}
+            <div class="other-project-overlay">
+              <div class="other-project-title">{{ post.title }}</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
+</div>
+{% else %}
+{{ content }}
+{% endif %}
