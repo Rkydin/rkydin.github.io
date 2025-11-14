@@ -1,15 +1,14 @@
 <style>
-/* Create a simple mobile nav bar */
+/* Simple mobile navigation bar */
 @media screen and (max-width: 768px) {
-  /* Add fixed nav at top */
   body::before {
     content: '';
     display: block;
-    height: 60px;
+    height: 50px;
   }
   
   .mobile-nav {
-    display: block !important;
+    display: flex !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,46 +16,19 @@
     background: #1a1a1a;
     border-bottom: 1px solid #333;
     z-index: 9999;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .mobile-nav-links {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  .mobile-nav-links a {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    text-decoration: none;
+  .mobile-nav-title {
+    font-size: 1.2em;
+    font-weight: 600;
     color: #fff;
-    font-size: 0.9em;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    margin: 0;
   }
   
-  .mobile-nav-links a:hover,
-  .mobile-nav-links a:active {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .mobile-nav {
-    display: none !important;
-  }
-  
-  body::before {
-    display: none !important;
-  }
-}
-</style>
+  .mobile
 
 <!-- Mobile Navigation -->
 <div class="mobile-nav">
