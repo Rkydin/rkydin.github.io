@@ -12,29 +12,76 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <style>
-/* Force hamburger menu on mobile */
+/* Force show masthead on mobile */
 @media screen and (max-width: 768px) {
-  /* Force show hamburger button */
-  .greedy-nav__toggle {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Force hide regular nav links */
-  .greedy-nav .visible-links {
-    display: none !important;
-  }
-  
-  /* Ensure masthead is visible */
   .masthead {
     display: block !important;
+    visibility: visible !important;
+    position: relative !important;
+    z-index: 999 !important;
+    background: #fff !important;
+    border-bottom: 1px solid #f2f3f3 !important;
   }
   
   .masthead__inner-wrap {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
+    padding: 0.5em 1em !important;
+  }
+  
+  .site-title {
+    display: block !important;
+    font-size: 1.2em !important;
+  }
+  
+  .greedy-nav {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    cursor: pointer !important;
+  }
+  
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+  
+  .greedy-nav .hidden-links {
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    margin-top: 5px !important;
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+    border-radius: 4px !important;
+    z-index: 1000 !important;
+    min-width: 200px !important;
+  }
+  
+  .greedy-nav .hidden-links li {
+    display: block !important;
+  }
+  
+  .greedy-nav .hidden-links a {
+    display: block !important;
+    padding: 10px 20px !important;
+    border-bottom: 1px solid #eee !important;
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  
+  .greedy-nav .hidden-links a:hover {
+    background: #f5f5f5 !important;
   }
 }
 </style>
