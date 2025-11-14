@@ -21,20 +21,18 @@ redirect_from:
 }
 
 .carousel-wrapper {
-  overflow: hidden;
   position: relative;
-}
-
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 20px;
+  height: 400px;
+  perspective: 1000px;
 }
 
 .project-card {
-  min-width: 350px;
-  max-width: 350px;
+  position: absolute;
+  width: 100%;
+  max-width: 450px;
   aspect-ratio: 4 / 3;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -42,19 +40,33 @@ redirect_from:
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   text-decoration: none;
   color: inherit;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  position: relative;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project-card.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.project-card.next {
+  transform: translateX(-50%) translateX(100px) rotateY(-15deg) scale(0.9);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.project-card.prev {
+  transform: translateX(-50%) translateX(-100px) rotateY(15deg) scale(0.9);
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  text-decoration: none;
 }
 
 .project-image {
@@ -169,7 +181,7 @@ redirect_from:
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .dot {
@@ -244,12 +256,6 @@ body.dark .project-card,
   background: rgba(26, 26, 26, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
-}
-
-html.dark .project-card:hover,
-body.dark .project-card:hover,
-.greedy-nav--dark .project-card:hover {
-  background: rgba(26, 26, 26, 0.85);
 }
 
 html.dark .project-image,
@@ -332,10 +338,18 @@ body.dark .author__urls.social-icons .btn:hover {
     padding: 0 50px;
   }
   
+  .carousel-wrapper {
+    height: 350px;
+  }
+  
   .carousel-nav {
     width: 40px;
     height: 40px;
     font-size: 20px;
+  }
+  
+  .project-card {
+    max-width: 350px;
   }
 }
 </style>
@@ -347,32 +361,32 @@ body.dark .author__urls.social-icons .btn:hover {
 <hr>
 
 <div class="projects-carousel">
-  <div class="carousel-wrapper">
+  <div class="carousel-wrapper" id="carouselWrapper">
     <div class="carousel-nav prev" onclick="moveCarousel(-1)">‹</div>
     <div class="carousel-nav next" onclick="moveCarousel(1)">›</div>
     
-    <div class="carousel-container" id="carousel">
-      {% for post in site.portfolio %}
-        <a href="{{ post.url | relative_url }}" class="project-card">
-          {% if post.header.teaser %}
-            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
-          {% elsif post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
-          {% else %}
-            <div class="project-image"></div>
-          {% endif %}
-          <div class="project-overlay">
-            <div class="project-content">
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-              {% if post.date %}
-                <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
-              {% endif %}
-            </div>
+    {% assign project_index = 0 %}
+    {% for post in site.portfolio %}
+      <a href="{{ post.url | relative_url }}" class="project-card" data-index="{{ project_index }}">
+        {% if post.header.teaser %}
+          <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
+        {% elsif post.image %}
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
+        {% else %}
+          <div class="project-image"></div>
+        {% endif %}
+        <div class="project-overlay">
+          <div class="project-content">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            {% if post.date %}
+              <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+            {% endif %}
           </div>
-        </a>
-      {% endfor %}
-    </div>
+        </div>
+      </a>
+      {% assign project_index = project_index | plus: 1 %}
+    {% endfor %}
   </div>
   
   <div class="carousel-dots" id="dots"></div>
@@ -386,8 +400,7 @@ body.dark .author__urls.social-icons .btn:hover {
 
 <script>
 let currentIndex = 0;
-const carousel = document.getElementById('carousel');
-const cards = carousel.querySelectorAll('.project-card');
+const cards = document.querySelectorAll('.project-card');
 const totalCards = cards.length;
 const dotsContainer = document.getElementById('dots');
 
@@ -403,10 +416,17 @@ for (let i = 0; i < totalCards; i++) {
 const dots = dotsContainer.querySelectorAll('.dot');
 
 function updateCarousel() {
-  const cardWidth = cards[0].offsetWidth;
-  const gap = 20;
-  const offset = -(currentIndex * (cardWidth + gap));
-  carousel.style.transform = `translateX(${offset}px)`;
+  cards.forEach((card, index) => {
+    card.classList.remove('active', 'next', 'prev');
+    
+    if (index === currentIndex) {
+      card.classList.add('active');
+    } else if (index === currentIndex + 1 || (currentIndex === totalCards - 1 && index === 0)) {
+      card.classList.add('next');
+    } else if (index === currentIndex - 1 || (currentIndex === 0 && index === totalCards - 1)) {
+      card.classList.add('prev');
+    }
+  });
   
   // Update dots
   dots.forEach((dot, index) => {
