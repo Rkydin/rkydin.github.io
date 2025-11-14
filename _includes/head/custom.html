@@ -28,12 +28,29 @@
     margin: 0;
   }
   
-  .mobile
+  .mobile-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
+  
+  body::before {
+    display: none !important;
+  }
+}
+</style>
 
 <!-- Mobile Navigation -->
 <div class="mobile-nav">
+  <div class="mobile-nav-title">Ryan Kim</div>
   <div class="mobile-nav-links">
-  <a href="/">Home</a>
-  <a href="/resume/">Resume</a>
-</div>
+    <a href="/resume/">Resume</a>
+  </div>
 </div>
