@@ -42,4 +42,87 @@ layout: single
 .other-project-item:hover {
   transform: translateY(-5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px rgba(0,
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.other-project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.other-project-item:hover .other-project-image {
+  filter: blur(3px);
+  transform: scale(1.05);
+}
+
+.other-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.other-project-item:hover .other-project-overlay {
+  opacity: 1;
+}
+
+.other-project-title {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
+  text-align: center;
+}
+
+html.dark .other-project-item,
+body.dark .other-project-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html.dark .other-project-item:hover,
+body.dark .other-project-item:hover {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .other-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="other-projects-section">
+  <h2>Other Projects</h2>
+  <div class="other-projects-grid">
+    {% for post in site.portfolio %}
+      {% if post.url != page.url %}
+        <a href="{{ post.url | relative_url }}" class="other-project-item">
+          {% if post.header.teaser %}
+            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="other-project-image">
+          {% elsif post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="other-project-image">
+          {% endif %}
+          <div class="other-project-overlay">
+            <div class="other-project-title">{{ post.title }}</div>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
