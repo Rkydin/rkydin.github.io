@@ -3,25 +3,37 @@ layout: single
 ---
 
 <style>
-.portfolio-container {
-  display: flex;
-  gap: 60px;
+/* Override page max-width to use full screen */
+.page {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.page__inner-wrap {
+  max-width: none !important;
+}
+
+#main {
+  max-width: 1600px !important;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
   align-items: start;
-  max-width: 100%;
+  width: 100%;
 }
 
 .portfolio-main-content {
-  flex: 1;
-  max-width: 900px;
   min-width: 0;
 }
 
 .other-projects-sidebar {
   position: sticky;
   top: 20px;
-  width: 220px;
-  flex-shrink: 0;
-  margin-left: auto;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -109,16 +121,13 @@ body.dark .other-project-item:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-@media (max-width: 1024px) {
-  .portfolio-container {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .portfolio-wrapper {
+    grid-template-columns: 1fr;
   }
   
   .other-projects-sidebar {
     position: relative;
-    margin-left: 0;
-    width: 100%;
-    max-width: 100%;
   }
   
   .other-projects-grid {
@@ -130,7 +139,7 @@ body.dark .other-project-item:hover {
 </style>
 
 {% if site.portfolio.size > 1 %}
-<div class="portfolio-container">
+<div class="portfolio-wrapper">
   <div class="portfolio-main-content">
     {{ content }}
   </div>
@@ -144,17 +153,4 @@ body.dark .other-project-item:hover {
             {% if post.header.teaser %}
               <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="other-project-image">
             {% elsif post.image %}
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="other-project-image">
-            {% endif %}
-            <div class="other-project-overlay">
-              <div class="other-project-title">{{ post.title }}</div>
-            </div>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </aside>
-</div>
-{% else %}
-{{ content }}
-{% endif %}
+              <img src="{{ post
