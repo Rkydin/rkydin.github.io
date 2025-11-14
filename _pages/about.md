@@ -15,8 +15,9 @@ redirect_from:
 }
 
 .projects-carousel {
-  margin: 40px 0;
+  margin: 60px 0;
   position: relative;
+  padding: 0 60px;
 }
 
 .carousel-wrapper {
@@ -33,11 +34,12 @@ redirect_from:
 .project-card {
   min-width: 350px;
   max-width: 350px;
+  aspect-ratio: 4 / 3;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
@@ -46,48 +48,77 @@ redirect_from:
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  position: relative;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  background: rgba(255, 255, 255, 0.85);
   text-decoration: none;
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background: #f0f0f0;
+  height: 100%;
+  object-fit: contain;
+  background: #f5f5f5;
+  transition: all 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+  filter: blur(3px);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
 .project-content {
-  padding: 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .project-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.3em;
-  color: #000;
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .project-card p {
-  flex-grow: 1;
-  margin-bottom: 15px;
-  color: #555;
+  margin: 0;
+  color: #fff;
   font-size: 0.95em;
   line-height: 1.4;
+  opacity: 0.95;
 }
 
 .project-date {
   font-size: 0.85em;
-  color: #888;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
   font-style: italic;
+  display: block;
 }
 
 .carousel-nav {
@@ -127,11 +158,11 @@ redirect_from:
 }
 
 .carousel-nav.prev {
-  left: -25px;
+  left: 0;
 }
 
 .carousel-nav.next {
-  right: -25px;
+  right: 0;
 }
 
 .carousel-dots {
@@ -221,18 +252,6 @@ body.dark .project-card:hover,
   background: rgba(26, 26, 26, 0.85);
 }
 
-html.dark .project-card h3,
-body.dark .project-card h3,
-.greedy-nav--dark .project-card h3 {
-  color: #fff;
-}
-
-html.dark .project-card p,
-body.dark .project-card p,
-.greedy-nav--dark .project-card p {
-  color: #ccc;
-}
-
 html.dark .project-image,
 body.dark .project-image,
 .greedy-nav--dark .project-image {
@@ -306,6 +325,19 @@ body.dark .author__urls.social-icons .btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-carousel {
+    padding: 0 50px;
+  }
+  
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
 </style>
 
 <div class="intro-text">
@@ -329,12 +361,14 @@ body.dark .author__urls.social-icons .btn:hover {
           {% else %}
             <div class="project-image"></div>
           {% endif %}
-          <div class="project-content">
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-            {% if post.date %}
-              <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
-            {% endif %}
+          <div class="project-overlay">
+            <div class="project-content">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+              {% if post.date %}
+                <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+              {% endif %}
+            </div>
           </div>
         </a>
       {% endfor %}
