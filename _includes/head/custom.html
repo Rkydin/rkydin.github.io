@@ -2,7 +2,6 @@
 <!-- start custom head snippets -->
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-<link rel="stylesheet" href="{{ base_path }}/assets/css/custom.css"/>
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
@@ -11,4 +10,36 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
+
+<style>
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: block !important;
+  }
+  
+  .greedy-nav .hidden-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 0;
+    margin-top: 5px;
+    border-radius: 4px;
+    z-index: 1000;
+    min-width: 200px;
+  }
+  
+  .greedy-nav .hidden-links a {
+    display: block !important;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+</style>
 <!-- end custom head snippets -->
