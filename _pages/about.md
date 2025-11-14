@@ -14,32 +14,35 @@ I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about
 ## Projects
 
 <style>
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+.projects-masonry {
+  column-count: 3;
+  column-gap: 20px;
   margin: 40px 0;
 }
 
 .project-item {
-  position: relative;
-  aspect-ratio: 4 / 3;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  break-inside: avoid;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-decoration: none;
+  position: relative;
 }
 
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .project-image {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  display: block;
   background: #f5f5f5;
   transition: all 0.5s ease;
 }
@@ -72,13 +75,26 @@ I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about
 
 .project-title {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
   margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .projects-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-masonry {
+    column-count: 1;
+  }
 }
 </style>
 
-<div class="projects-grid">
+<div class="projects-masonry">
 {% for post in site.portfolio %}
   <a href="{{ post.url | relative_url }}" class="project-item">
     {% if post.header.teaser %}
@@ -86,7 +102,7 @@ I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about
     {% elsif post.image %}
       <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="project-image">
     {% else %}
-      <div class="project-image"></div>
+      <div class="project-image" style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
     {% endif %}
     <div class="project-overlay">
       <h2 class="project-title">{{ post.title }}</h2>
