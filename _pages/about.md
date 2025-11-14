@@ -228,7 +228,6 @@ redirect_from:
   text-decoration: none !important;
 }
 
-/* Glass Follow Button in Sidebar */
 .author__urls.social-icons .btn {
   background: rgba(255, 255, 255, 0.25) !important;
   backdrop-filter: blur(10px) !important;
@@ -249,7 +248,6 @@ redirect_from:
   text-decoration: none !important;
 }
 
-/* Dark mode styles */
 html.dark .project-card,
 body.dark .project-card,
 .greedy-nav--dark .project-card {
@@ -322,17 +320,6 @@ body.dark .author__urls.social-icons .btn:hover {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
 }
 
-[data-theme="air"] .portfolio-btn {
-  background: rgba(255, 255, 255, 0.25);
-  color: #000;
-}
-
-[data-theme="air-dark"] .portfolio-btn {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   .projects-carousel {
     padding: 0 50px;
@@ -361,13 +348,12 @@ body.dark .author__urls.social-icons .btn:hover {
 <hr>
 
 <div class="projects-carousel">
-  <div class="carousel-wrapper" id="carouselWrapper">
+  <div class="carousel-wrapper">
     <div class="carousel-nav prev" onclick="moveCarousel(-1)">‹</div>
     <div class="carousel-nav next" onclick="moveCarousel(1)">›</div>
     
-    {% assign project_index = 0 %}
     {% for post in site.portfolio %}
-      <a href="{{ post.url | relative_url }}" class="project-card" data-index="{{ project_index }}">
+      <a href="{{ post.url | relative_url }}" class="project-card">
         {% if post.header.teaser %}
           <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-image">
         {% elsif post.image %}
@@ -385,7 +371,6 @@ body.dark .author__urls.social-icons .btn:hover {
           </div>
         </div>
       </a>
-      {% assign project_index = project_index | plus: 1 %}
     {% endfor %}
   </div>
   
@@ -404,7 +389,6 @@ const cards = document.querySelectorAll('.project-card');
 const totalCards = cards.length;
 const dotsContainer = document.getElementById('dots');
 
-// Create dots
 for (let i = 0; i < totalCards; i++) {
   const dot = document.createElement('div');
   dot.className = 'dot';
@@ -421,19 +405,17 @@ function updateCarousel() {
     
     if (index === currentIndex) {
       card.classList.add('active');
-    } else if (index === currentIndex + 1 || (currentIndex === totalCards - 1 && index === 0)) {
+    } else if (index === currentIndex + 1) {
       card.classList.add('next');
-    } else if (index === currentIndex - 1 || (currentIndex === 0 && index === totalCards - 1)) {
+    } else if (index === currentIndex - 1) {
       card.classList.add('prev');
     }
   });
   
-  // Update dots
   dots.forEach((dot, index) => {
     dot.classList.toggle('active', index === currentIndex);
   });
   
-  // Update navigation buttons
   document.querySelector('.carousel-nav.prev').classList.toggle('disabled', currentIndex === 0);
   document.querySelector('.carousel-nav.next').classList.toggle('disabled', currentIndex === totalCards - 1);
 }
@@ -450,12 +432,10 @@ function goToSlide(index) {
   updateCarousel();
 }
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') moveCarousel(-1);
   if (e.key === 'ArrowRight') moveCarousel(1);
 });
 
-// Initialize
 updateCarousel();
 </script>
