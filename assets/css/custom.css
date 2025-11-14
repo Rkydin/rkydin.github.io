@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: block !important;
+  }
+  
+  .greedy-nav .hidden-links {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 0;
+    margin-top: 5px;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .greedy-nav .hidden-links a {
+    display: block !important;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .greedy-nav .hidden-links a:last-child {
+    border-bottom: none;
+  }
+  
+  html.dark .greedy-nav .hidden-links,
+  body.dark .greedy-nav .hidden-links {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+}
