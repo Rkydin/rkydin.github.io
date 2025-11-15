@@ -15,8 +15,8 @@ redirect_from:
 }
 
 .portfolio-masonry {
-  column-count: 3;
-  column-gap: 20px;
+  column-count: 2;
+  column-gap: 25px;
   margin: 40px 0;
   padding: 0;
 }
@@ -125,7 +125,7 @@ body.dark .portfolio-item:hover,
 
 @media (max-width: 1200px) {
   .portfolio-masonry {
-    column-count: 2;
+    column-count: 1;
   }
 }
 
@@ -144,27 +144,8 @@ body.dark .portfolio-item:hover,
   <p>I'm a recent Rutgers BME graduate. I've been designing with SolidWorks for about three years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.</p>
 </div>
 
-
 <h2>Projects</h2>
 
 <div class="portfolio-masonry">
   {% for post in site.portfolio %}
-    <a href="{{ post.url | relative_url }}" class="portfolio-item">
-      {% if post.header.teaser %}
-        <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
-      {% elsif post.image %}
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
-      {% else %}
-        <div class="portfolio-image" style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-      {% endif %}
-      
-      <div class="portfolio-overlay">
-        <h2 class="portfolio-title">{{ post.title }}</h2>
-        <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        {% if post.date %}
-          <span class="portfolio-date">{{ post.date | date: "%B %Y" }}</span>
-        {% endif %}
-      </div>
-    </a>
-  {% endfor %}
-</div>
+    <a href="{{ post.url | relative_url }}" clas
