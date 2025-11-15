@@ -147,5 +147,23 @@ body.dark .portfolio-item:hover,
 <h2>Projects</h2>
 
 <div class="portfolio-masonry">
-  {% for post in site.portfolio %}
-    <a href="{{ post.url | relative_url }}" clas
+{% for post in site.portfolio %}
+  <a href="{{ post.url | relative_url }}" class="portfolio-item">
+    {% if post.header.teaser %}
+      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
+    {% elsif post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
+    {% else %}
+      <div class="portfolio-image" style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+    {% endif %}
+    
+    <div class="portfolio-overlay">
+      <h2 class="portfolio-title">{{ post.title }}</h2>
+      <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+      {% if post.date %}
+        <span class="portfolio-date">{{ post.date | date: "%B %Y" }}</span>
+      {% endif %}
+    </div>
+  </a>
+{% endfor %}
+</div>
