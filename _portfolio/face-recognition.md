@@ -67,7 +67,7 @@ Developed a desktop face recognition application in Python that can enroll new u
 * **Python** - Core programming language
 * **OpenCV (cv2)** - Video capture and image processing
 * **face_recognition library** - Face detection and encoding
-* **Tkinter** - GUI framework for dialogs and interface
+* **Tkinter** - File dialog for batch image upload
 * **pickle** - Serialization for saving face encodings
 * **NumPy** - Array operations
 
