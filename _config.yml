@@ -278,6 +278,7 @@ defaults:
       layout: portfolio
       author_profile: true
       share: false
+      show_date: false
   # _talks
   - scope:
       path: ""
