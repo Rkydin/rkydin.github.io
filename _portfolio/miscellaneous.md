@@ -1,0 +1,48 @@
+---
+title: "Miscellaneous Projects"
+excerpt: "A collection of random things I've made."
+collection: portfolio
+layout: portfolio
+author_profile: true
+share: false
+header:
+  teaser: /images/misc/miscellaneous_projects.png
+---
+
+<style>
+.page__share {
+  display: none !important;
+}
+</style>
+
+## Overview
+
+A collection of random things I've made.
+
+---
+
+## Homemade Fumehood
+
+Built a DIY fumehood for ventilating fumes from soldering and 3D printing. Designed and 3D printed custom parts to connect to flexible ducting that vents out the window.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="/images/misc/fumehood_front.jpg" alt="Fumehood front view" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Fumehood front view</em></p>
+  </div>
+  <div>
+    <img src="/images/misc/fumehood_attached.jpg" alt="Fumehood attached" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Fumehood attached to ducting</em></p>
+  </div>
+</div>
+
+---
+
+## Window Vent
+
+3D printed window vent adapter to allow dual exhaust hoses to vent outside while keeping the window mostly sealed.
+
+<div style="margin: 30px 0;">
+  <img src="/images/misc/window_vent.jpg" alt="Window vent" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Window vent with dual exhaust ports</em></p>
+</div>
