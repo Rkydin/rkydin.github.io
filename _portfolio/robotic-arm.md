@@ -36,7 +36,7 @@ Early CAD design exploring the general concept with available tools and componen
 - Two servos and differential gear set for shoulder rotation and elevation
 - Stepper motor mounted to linkage for elbow flexion
 - Servo on elbow for forearm rotation
-- Planned cable-driven end effector inspired by Intuitive Surgical's da Vinci grippers
+- Cable-driven end effector
 
 ### Prototype 1.2 - Linkage Mechanism
 
@@ -58,16 +58,15 @@ Close-up of the early linkage controlled by stepper motor. This mockup revealed 
 
 ### Prototype 1.3 - Cable-Driven Gripper
 
-Initial end effector design inspired by surgical robotics.
+Initial end effector design.
 
 <div style="margin: 30px 0;">
   <img src="/images/roboticarm/prototype1.3.png" alt="Prototype 1.3 - End effector gripper" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Cable-driven gripper inspired by da Vinci surgical systems</em></p>
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Cable-driven gripper for precise manipulation</em></p>
 </div>
 
 **Design Approach:**
 - Cable-driven actuation using Bowden cables
-- Inspired by Intuitive Surgical's da Vinci grippers
 - Designed for precise manipulation at small scale
 
 ---
@@ -111,7 +110,7 @@ Redesigned differential gear system and hub for the shoulder joint.
 - Affordable precision robotics for home use
 - Intuitive teleoperation interface
 - Human arm-like kinematics
-- Surgical-grade precision at accessible cost
+- Precision control at accessible cost
 
 ---
 
@@ -122,16 +121,4 @@ Redesigned differential gear system and hub for the shoulder joint.
 Currently refining Prototype 2 design with focus on:
 - Optimizing differential gear geometry
 - Improving weight distribution through pulley systems
-- Developing control software for teleoperation
-- Testing joint ranges of motion and precision
-
----
-
-## Future Development
-
-- Complete Prototype 2 mechanical design
-- Integrate full 7 DOF control system
-- Develop teleoperation interface
-- Implement precision control algorithms
-- Add force feedback capability
-- Expand end effector capabilities
+- Developing control software for
