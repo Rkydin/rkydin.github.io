@@ -121,4 +121,16 @@ Redesigned differential gear system and hub for the shoulder joint.
 Currently refining Prototype 2 design with focus on:
 - Optimizing differential gear geometry
 - Improving weight distribution through pulley systems
-- Developing control software for
+- Developing control software for teleoperation
+- Testing joint ranges of motion and precision
+
+---
+
+## Future Development
+
+- Complete Prototype 2 mechanical design
+- Integrate full 7 DOF control system
+- Develop teleoperation interface
+- Implement precision control algorithms
+- Add force feedback capability
+- Expand end effector capabilities
