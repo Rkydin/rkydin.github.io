@@ -23,6 +23,11 @@ header:
 
 Providing mechanical engineering support for the MoleIQ product line, focusing on design documentation, prototyping, and design improvements.
 
+<div style="margin: 30px 0;">
+  <img src="/images/moleiq/moleiq.png" alt="MoleIQ Product" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>MoleIQ pallet handling robot</em></p>
+</div>
+
 ## Responsibilities
 
 **CAD & Documentation:**
