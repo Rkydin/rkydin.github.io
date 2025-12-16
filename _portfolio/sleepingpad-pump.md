@@ -45,44 +45,41 @@ Working prototype utilizing a compact fan-based inflation system with custom noz
 ## Technical Specifications
 
 **Current Weight:**
-
-- 20 grams total weight
-- Ongoing optimization to reduce weight further
+* 20 grams total weight
+* Ongoing optimization to reduce weight further
 
 **Design Goals:**
-
-- Minimal weight for backpacking
-- Compact form factor
-- Reliable inflation performance
-- Battery-powered operation
-- Universal sleeping pad valve compatibility
+* Minimal weight for backpacking
+* Compact form factor
+* Reliable inflation performance
+* Battery-powered operation
+* Universal sleeping pad valve compatibility
 
 ## Development Status
 
 🔧 **Active Prototyping**
 
 Current focus areas:
-
-- Testing inflation speed and efficiency
-- Weight reduction below 20 grams
-- Optimizing power delivery system
-- Battery life optimization
-- Nozzle design and valve compatibility
+* Testing inflation speed and efficiency
+* Weight reduction below 20 grams
+* Optimizing power delivery system
+* Battery life optimization
+* Nozzle design and valve compatibility
 
 ## Technologies Used
 
-- SolidWorks CAD modeling and mass analysis
-- PCB design and electronics
-- Fan selection and airflow optimization
-- Portable power systems
-- Mechanical design for compactness
-- Custom nozzle design
+* SolidWorks CAD modeling and mass analysis
+* PCB design and electronics
+* Fan selection and airflow optimization
+* Portable power systems
+* Mechanical design for compactness
+* Custom nozzle design
 
 ## Future Development
 
-- Measure and optimize inflation time
-- Further weight reduction
-- Finalize power system configuration
-- Add battery capacity indicator
-- Design weatherproof housing
-- Test nozzle with various sleeping pad valves
+* Measure and optimize inflation time
+* Further weight reduction
+* Finalize power system configuration
+* Add battery capacity indicator
+* Design weatherproof housing
+* Test nozzle with various sleeping pad valves
