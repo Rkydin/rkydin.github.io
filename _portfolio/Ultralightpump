@@ -1,0 +1,72 @@
+---
+title: "UltraLight Sleeping Pad Pump"
+excerpt: "Compact, lightweight inflator for backpacking sleeping pads."
+collection: portfolio
+layout: portfolio
+author_profile: true
+share: false
+header:
+  teaser: /images/sleepingpad-pump/cpump.png
+---
+
+<style>
+.page__share {
+  display: none !important;
+}
+</style>
+
+**Project Duration:** November 2024 - Present  
+**Status:** Prototype Development
+
+## Project Overview
+
+Designing a portable, ultralight pump for inflating sleeping pads during backpacking trips. The goal is to create a compact solution that's lighter and more convenient than traditional manual inflation methods.
+
+## Current Design
+
+Working prototype utilizing a compact fan-based inflation system.
+
+<div style="margin: 30px 0;">
+  <img src="/images/sleepingpad-pump/pump.png" alt="Current prototype" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Current iteration of the sleeping pad pump</em></p>
+</div>
+
+## Technical Specifications
+
+**Current Weight:**
+- 20 grams total weight
+- Ongoing optimization to reduce weight further
+
+**Design Goals:**
+- Minimal weight for backpacking
+- Compact form factor
+- Reliable inflation performance
+- Battery-powered operation
+
+## Development Status
+
+🔧 **Active Prototyping**
+
+Current focus areas:
+- Testing inflation speed and efficiency
+- Weight reduction below 20 grams
+- Optimizing power delivery system
+- Battery life optimization
+
+## Technologies Used
+
+- SolidWorks CAD modeling and mass analysis
+- PCB design and electronics
+- Fan selection and airflow optimization
+- Portable power systems
+- Mechanical design for compactness
+
+---
+
+## Future Development
+
+- Measure and optimize inflation time
+- Further weight reduction
+- Finalize power system configuration
+- Add battery capacity indicator
+- Design weatherproof housing
