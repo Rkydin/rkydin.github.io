@@ -26,28 +26,25 @@ Providing mechanical engineering support for the MoleIQ product line, focusing o
 ## Responsibilities
 
 **CAD & Documentation:**
-
-- Creating detailed engineering drawings following ASME Y14.5-2018 standards
-- Applying GD&T (Geometric Dimensioning and Tolerancing) for manufacturing clarity
-- Preparing complete CAD packages for production and client use
+* Creating detailed engineering drawings following ASME Y14.5-2018 standards
+* Applying GD&T (Geometric Dimensioning and Tolerancing) for manufacturing clarity
+* Preparing complete CAD packages for production and client use
 
 **Prototyping & Design:**
-
-- Rapid prototyping using 3D printing for design validation
-- CAD modeling and redesign work
-- Fit checks and design iteration
+* Rapid prototyping using 3D printing for design validation
+* CAD modeling and redesign work
+* Fit checks and design iteration
 
 **Engineering Support:**
-
-- Collaborating with manufacturing engineers on production readiness
-- Reverse engineering and CAD cleanup of existing components
-- Supporting ongoing product development efforts
+* Collaborating with manufacturing engineers on production readiness
+* Reverse engineering and CAD cleanup of existing components
+* Supporting ongoing product development efforts
 
 ## Skills Applied
 
-- SolidWorks (parts, assemblies, detailed drawings)
-- GD&T per ASME Y14.5-2018
-- FDM 3D printing and rapid prototyping
-- Design for manufacturability
-- Engineering documentation
-- Cross-functional collaboration
+* SolidWorks (parts, assemblies, detailed drawings)
+* GD&T per ASME Y14.5-2018
+* FDM 3D printing and rapid prototyping
+* Design for manufacturability
+* Engineering documentation
+* Cross-functional collaboration
