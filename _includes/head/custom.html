@@ -1,3 +1,27 @@
+{% include base_path %}
+<!-- start custom head snippets -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2X7Y9WQ94G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-2X7Y9WQ94G');
+</script>
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
 <style>
 /* Simple mobile navigation bar */
 @media screen and (max-width: 768px) {
@@ -13,8 +37,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background: #2c3e50;
-    border-bottom: 1px solid #34495e;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
     z-index: 9999;
     padding: 12px 20px;
     justify-content: space-between;
@@ -24,6 +48,7 @@
   .mobile-nav-title {
     font-size: 1.2em;
     font-weight: 600;
+    color: #fff;
     margin: 0;
   }
   
@@ -60,3 +85,4 @@
     <a href="/resume/">Resume</a>
   </div>
 </div>
+<!-- end custom head snippets -->
