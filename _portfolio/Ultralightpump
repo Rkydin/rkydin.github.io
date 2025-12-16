@@ -42,6 +42,8 @@ Working prototype utilizing a compact fan-based inflation system with custom noz
   <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Custom nozzle design for sleeping pad valve compatibility</em></p>
 </div>
 
+---
+
 ## Technical Specifications
 
 **Current Weight:**
@@ -55,6 +57,8 @@ Working prototype utilizing a compact fan-based inflation system with custom noz
 - Battery-powered operation
 - Universal sleeping pad valve compatibility
 
+---
+
 ## Development Status
 
 🔧 **Active Prototyping**
@@ -65,6 +69,8 @@ Current focus areas:
 - Optimizing power delivery system
 - Battery life optimization
 - Nozzle design and valve compatibility
+
+---
 
 ## Technologies Used
 
