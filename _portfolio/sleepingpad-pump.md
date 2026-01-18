@@ -15,71 +15,103 @@ header:
 }
 </style>
 
-**Project Duration:** November 2024 - Present  
-**Status:** Prototype Development
+**Project Duration:** November 2024 - January 2025  
+**Status:** Complete
 
 ## Project Overview
 
-Designing a portable, ultralight pump for inflating sleeping pads during backpacking trips. The goal is to create a compact solution that's lighter and more convenient than traditional manual inflation methods.
+Designed and built a portable, ultralight pump for inflating sleeping pads during backpacking trips. The final design achieves a compact solution that's lighter and more convenient than traditional manual inflation methods.
 
-## Current Design
+## Design Evolution
 
-Working prototype utilizing a compact fan-based inflation system with custom nozzle attachment.
+### Early Prototype
+
+Initial working prototype with basic nozzle attachment.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
   <div>
-    <img src="/images/sleepingpad-pump/pump.png" alt="Front view of pump" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Front view of current prototype</em></p>
+    <img src="/images/sleepingpad-pump/pump.png" alt="Early prototype - front" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Early prototype - front view</em></p>
   </div>
   <div>
-    <img src="/images/sleepingpad-pump/pumpback.png" alt="Back view of pump" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Back view showing components</em></p>
+    <img src="/images/sleepingpad-pump/pumpback.png" alt="Early prototype - back" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Early prototype - back view</em></p>
   </div>
 </div>
 
 <div style="margin: 30px 0;">
   <img src="/images/sleepingpad-pump/nozzle.png" alt="Nozzle CAD design" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Custom nozzle design for sleeping pad valve compatibility</em></p>
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>CAD model of initial nozzle design</em></p>
 </div>
 
-## Technical Specifications
+## Final Design
 
-**Current Weight:**
-* 20 grams total weight
-* Ongoing optimization to reduce weight further
+Refined design with interchangeable nozzle system and USB-C charging.
 
-**Design Goals:**
-* Minimal weight for backpacking
+### Pump with Thermarest Nozzle
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="/images/sleepingpad-pump/thermarestfront.png" alt="Final pump with Thermarest nozzle - front" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Final design with Thermarest nozzle</em></p>
+  </div>
+  <div>
+    <img src="/images/sleepingpad-pump/thermarestback.png" alt="Final pump - back view" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Back view showing USB-C port</em></p>
+  </div>
+</div>
+
+### Pump with Exped Nozzle
+
+<div style="margin: 30px 0;">
+  <img src="/images/sleepingpad-pump/expedfront.png" alt="Pump with Exped nozzle" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Alternative nozzle for Exped valves</em></p>
+</div>
+
+### Modular Design
+
+<div style="margin: 30px 0;">
+  <img src="/images/sleepingpad-pump/withoutfront.png" alt="Pump without nozzle" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Pump body showing modular nozzle attachment system</em></p>
+</div>
+
+## Final Specifications
+
+**Weight:**
+* Pump body: 18 grams
+* Nozzles: 4 grams each
+* Total system: 22 grams (pump + one nozzle)
+
+**Performance:**
+* Inflation time: ~12 minutes for medium sleeping pad
+* Power: USB-C rechargeable
+* Compatible with Thermarest and Exped valves
+
+**Features:**
+* Ultralight design optimized for backpacking
+* USB-C charging
+* Interchangeable nozzle system
 * Compact form factor
-* Reliable inflation performance
-* Battery-powered operation
-* Universal sleeping pad valve compatibility
 
-## Development Status
+## Nozzle Compatibility
 
-🔧 **Active Prototyping**
+**Thermarest Nozzle:**
+* Compatible with Thermarest NeoAir and ProLite series
 
-Current focus areas:
-* Testing inflation speed and efficiency
-* Weight reduction below 20 grams
-* Optimizing power delivery system
-* Battery life optimization
-* Nozzle design and valve compatibility
+**Exped Nozzle:**
+* Compatible with Exped flat valve systems
 
 ## Technologies Used
 
-* SolidWorks CAD modeling and mass analysis
+* SolidWorks CAD modeling
 * PCB design and electronics
 * Fan selection and airflow optimization
-* Portable power systems
-* Mechanical design for compactness
-* Custom nozzle design
+* USB-C power delivery
+* 3D printing
+* Modular nozzle design
 
-## Future Development
+## Future Improvements
 
-* Measure and optimize inflation time
+* Reduce inflation time below 12 minutes
 * Further weight reduction
-* Finalize power system configuration
-* Add battery capacity indicator
-* Design weatherproof housing
-* Test nozzle with various sleeping pad valves
+* Additional nozzle designs for other valve types
