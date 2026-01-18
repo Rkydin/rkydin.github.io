@@ -15,7 +15,7 @@ header:
 }
 </style>
 
-**Project Duration:** November 2024 - January 2025  
+**Project Duration:** November 2025 - January 2026
 **Status:** Complete
 
 ## Project Overview
