@@ -26,12 +26,21 @@ author:
   avatar           : "profile.png"
   name             : "Ryan Kim"
   pronouns         : # example: "she/her"  
-  bio              : "Welcome to my engineering portfolio where I'll be putting all my stuff"
+  bio              : "Welcome to my engineering portfolio where I'll be putting all my stuff."
   location         : "NJ"
-  employer         : "MS NortheasternRutgers || BS Rutgers University"
+  employer         : "Robomekanics"
+  
+  # Education
+  education:
+    - degree: "MS Mechanical Engineering"
+      university: "Northeastern University"
+      year: "Expected 2026 fall"
+    - degree: "BS Biomedical Engineering"  
+      university: "Rutgers University"
+      year: "2025"
+  
   uri              : # URL
-  email            : "rdky404@gmail.com" 
-
+  email            : "rdky404@gmail.com"
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
