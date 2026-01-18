@@ -6,7 +6,7 @@ layout: portfolio
 author_profile: true
 share: false
 header:
-  teaser: /images/sleepingpad-pump/cpump.png
+  teaser: /images/sleepingpad-pump/withoutfront.png
 ---
 
 <style>
