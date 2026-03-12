@@ -63,7 +63,7 @@ Those tiny apparent shifts in the pattern directly correspond to density gradien
 
 ## How It Works
 
-1. Generate high-frequency background pattern (sine wave)
+1. Generate high-frequency background pattern
 2. Capture baseline image of undisturbed air
 3. Introduce heat source and capture comparison images
 4. Calculate pixel shifts between baseline and heated frames
