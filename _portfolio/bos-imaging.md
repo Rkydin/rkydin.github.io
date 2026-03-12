@@ -6,7 +6,7 @@ layout: portfolio
 author_profile: true
 share: false
 header:
-  teaser: /images/bos/BOS.gif
+  teaser: https://i.imgur.com/iRkqtU8.gif
 ---
 
 <style>
@@ -26,18 +26,24 @@ Those tiny apparent shifts in the pattern directly correspond to density gradien
 
 ## Results
 
-### Normal View
+### Jet Lighter
 
-<div style="margin: 30px 0;">
-  <img src="/images/bos/normal.gif" alt="Normal camera view" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Standard camera view - heat distortion invisible</em></p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="https://i.imgur.com/pJ4EZW5.gif" alt="Normal view - jet lighter" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>Standard view - heat distortion invisible</em></p>
+  </div>
+  <div>
+    <img src="https://i.imgur.com/iRkqtU8.gif" alt="BOS view - jet lighter" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>BOS processing reveals air density gradients</em></p>
+  </div>
 </div>
 
-### Schlieren Imaging
+### Candle
 
 <div style="margin: 30px 0;">
-  <img src="/images/bos/BOS.gif" alt="BOS processed view" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>BOS processing reveals invisible air density gradients</em></p>
+  <img src="https://i.imgur.com/A5L7gtD.gif" alt="BOS view - candle" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>BOS reveals heat plume and convection patterns from candle flame</em></p>
 </div>
 
 ## Technical Implementation
