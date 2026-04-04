@@ -141,7 +141,7 @@ body.dark .portfolio-item:hover,
 </style>
 
 <div class="intro-text">
-  <p>I'm a recent Rutgers BME graduate and am now committed to Northeastern University's MS in the Fall. I've been designing with SolidWorks for about 4 years, have experience with several programming languages, and build and developed hardware using 3D-printed parts. I'm looking to fill this page with future projects in robotics and assistive technology.</p>
+  <p>I'm a recent Rutgers BME graduate committed to Northeastern University's MS in Mechanical Engineering (Fall 2026). I've been designing with SolidWorks for about 4 years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm passionate about robotics, assistive technology, and space exploration—looking to fill this page with projects that push the boundaries of what's possible.</p>
 </div>
 
 <h2>Projects</h2>
