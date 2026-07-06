@@ -211,11 +211,34 @@ redirect_from:
 .bp-card-open svg { width: 10px; height: 10px; transition: transform 0.15s ease; }
 .bp-card:hover .bp-card-open svg { transform: translateX(3px); }
 
-.bp-tags {
+.bp-tags-river {
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 48px, black calc(100% - 48px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 48px, black calc(100% - 48px), transparent);
+}
+
+.bp-tags-track {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-  margin-top: 20px;
+  width: max-content;
+  animation: bp-river-flow 32s linear infinite;
+}
+
+.bp-tags-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bp-river-flow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-tags-track {
+    animation: none;
+  }
 }
 
 .bp-tag {
@@ -226,6 +249,8 @@ redirect_from:
   padding: 5px 9px;
   border: 1px solid var(--global-border-color);
   color: var(--global-text-color-light);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 </style>
 
@@ -236,13 +261,45 @@ redirect_from:
 
 <div class="bp-intro">
   <p>I'm a recent Rutgers BME graduate committed to Northeastern University's MS in Mechanical Engineering starting Fall 2026. I've been designing in SolidWorks for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. I'm passionate about robotics, assistive technology, and space exploration — looking to fill this page with projects that push the boundaries of what's possible.</p>
-  <div class="bp-tags">
-    <span class="bp-tag">SolidWorks</span>
-    <span class="bp-tag">Python</span>
-    <span class="bp-tag">OpenCV</span>
-    <span class="bp-tag">3D Printing</span>
-    <span class="bp-tag">GD&amp;T</span>
-    <span class="bp-tag">Mechanism Design</span>
+  <div class="bp-tags-river">
+    <div class="bp-tags-track">
+      <span class="bp-tag">SolidWorks</span>
+      <span class="bp-tag">Siemens NX</span>
+      <span class="bp-tag">GD&amp;T</span>
+      <span class="bp-tag">Tolerance Analysis</span>
+      <span class="bp-tag">DFM</span>
+      <span class="bp-tag">DFA</span>
+      <span class="bp-tag">FEA</span>
+      <span class="bp-tag">3D Printing</span>
+      <span class="bp-tag">Rapid Prototyping</span>
+      <span class="bp-tag">Mechanism Design</span>
+      <span class="bp-tag">Fixture Design</span>
+      <span class="bp-tag">Mechanical Testing</span>
+      <span class="bp-tag">Failure Analysis</span>
+      <span class="bp-tag">BOM Management</span>
+      <span class="bp-tag">Root Cause Analysis</span>
+      <span class="bp-tag">Python</span>
+      <span class="bp-tag">MATLAB</span>
+      <span class="bp-tag">C++</span>
+      <span class="bp-tag">SolidWorks</span>
+      <span class="bp-tag">Siemens NX</span>
+      <span class="bp-tag">GD&amp;T</span>
+      <span class="bp-tag">Tolerance Analysis</span>
+      <span class="bp-tag">DFM</span>
+      <span class="bp-tag">DFA</span>
+      <span class="bp-tag">FEA</span>
+      <span class="bp-tag">3D Printing</span>
+      <span class="bp-tag">Rapid Prototyping</span>
+      <span class="bp-tag">Mechanism Design</span>
+      <span class="bp-tag">Fixture Design</span>
+      <span class="bp-tag">Mechanical Testing</span>
+      <span class="bp-tag">Failure Analysis</span>
+      <span class="bp-tag">BOM Management</span>
+      <span class="bp-tag">Root Cause Analysis</span>
+      <span class="bp-tag">Python</span>
+      <span class="bp-tag">MATLAB</span>
+      <span class="bp-tag">C++</span>
+    </div>
   </div>
 </div>
 
