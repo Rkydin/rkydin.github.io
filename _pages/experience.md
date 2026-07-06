@@ -134,6 +134,55 @@ author_profile: true
   }
 }
 
+.exp-photo-river {
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-right: -92px;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
+}
+
+.exp-photo-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: exp-river-flow 26s linear infinite;
+}
+
+.exp-photo-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes exp-river-flow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exp-photo-track {
+    animation: none;
+  }
+}
+
+.exp-photo-track img {
+  height: 140px;
+  width: auto;
+  object-fit: cover;
+  border: 1px solid var(--global-border-color);
+  flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+  .exp-photo-river {
+    margin-right: -44px;
+  }
+
+  .exp-photo-track img {
+    height: 100px;
+  }
+}
+
 .exp-node::before {
   content: "";
   position: absolute;
@@ -253,6 +302,18 @@ author_profile: true
       <li>Designed optical-mount fixtures and supported hardware development for future thermal vacuum (TVAC) testing.</li>
       <li>Participated in tolerance analysis, design iteration, and system-integration discussions.</li>
     </ul>
+    <div class="exp-photo-river">
+      <div class="exp-photo-track">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+      </div>
+    </div>
   </div>
 
   <div class="exp-node exp-node--media" data-cat="experience">
