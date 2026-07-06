@@ -328,7 +328,8 @@ redirect_from:
 </div>
 
 <div class="bp-grid">
-{% for post in site.portfolio %}
+{% assign sorted_portfolio = site.portfolio | sort: 'last_updated' | reverse %}
+{% for post in sorted_portfolio %}
   <a href="{{ post.url | relative_url }}" class="bp-card">
     <div class="bp-card-strip">
       <span class="bp-card-tag">{{ post.category | default: "Project" }}</span>

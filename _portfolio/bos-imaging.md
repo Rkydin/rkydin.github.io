@@ -2,6 +2,7 @@
 title: "Background-Oriented Schlieren Imaging"
 excerpt: "Making invisible air density gradients visible using optical techniques and Python."
 category: "Optics"
+last_updated: 2026-03-11
 collection: portfolio
 layout: portfolio
 author_profile: true
