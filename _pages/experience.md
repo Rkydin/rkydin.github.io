@@ -31,6 +31,35 @@ author_profile: true
   margin-bottom: 44px;
 }
 
+.exp-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.exp-section-head h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.exp-section-head .exp-count {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.exp-tree + .exp-section-head {
+  margin-top: 56px;
+}
+
 .exp-tree {
   position: relative;
   margin: 0 0 40px;
@@ -160,34 +189,27 @@ author_profile: true
 </div>
 
 <div class="exp-intro">
-  <p>How I got here, roughly in order — school, research, and the mechanical engineering roles in between.</p>
+  <p>Work experience and education, each newest first.</p>
+</div>
+
+<div class="exp-section-head">
+  <h2>Experience</h2>
+  <span class="exp-count">Latest → Earliest</span>
 </div>
 
 <div class="exp-tree">
 
-  <div class="exp-node" data-cat="education">
-    <div class="exp-node-head">
-      <span class="exp-tag">Education</span>
-      <span class="exp-dates">Sep 2021 – May 2025</span>
-    </div>
-    <h3>B.S. Biomedical Engineering</h3>
-    <p class="exp-org">Rutgers University, School of Engineering — New Brunswick, NJ</p>
-    <ul>
-      <li>Coursework in biomaterials, biomechanics, and biomedical devices, focused on the mechanical, biological, and chemical behavior of engineered systems.</li>
-      <li>Performed mechanical testing, failure analysis, and data analysis using Instron machines and optical microscopy.</li>
-    </ul>
-  </div>
-
   <div class="exp-node" data-cat="experience">
     <div class="exp-node-head">
       <span class="exp-tag">Experience</span>
-      <span class="exp-dates">Summer 2021</span>
+      <span class="exp-dates">Apr 2026 – Jul 2026</span>
     </div>
-    <h3>Research Assistant</h3>
-    <p class="exp-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
+    <h3>Mechanical Design Intern</h3>
+    <p class="exp-org">Volta Space Technologies — Broomfield, CO</p>
     <ul>
-      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, and laboratory testing.</li>
-      <li>Performed UV-Vis spectrophotometry, followed cleanroom procedures, analyzed data, and documented preliminary findings.</li>
+      <li>Developed SolidWorks CAD models and mechanical hardware for internal and electro-optical support applications.</li>
+      <li>Designed optical-mount fixtures and supported hardware development for future thermal vacuum (TVAC) testing.</li>
+      <li>Participated in tolerance analysis, design iteration, and system-integration discussions.</li>
     </ul>
   </div>
 
@@ -208,16 +230,24 @@ author_profile: true
   <div class="exp-node" data-cat="experience">
     <div class="exp-node-head">
       <span class="exp-tag">Experience</span>
-      <span class="exp-dates">Apr 2026 – Jul 2026</span>
+      <span class="exp-dates">Summer 2021</span>
     </div>
-    <h3>Mechanical Design Intern</h3>
-    <p class="exp-org">Volta Space Technologies — Broomfield, CO</p>
+    <h3>Research Assistant</h3>
+    <p class="exp-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
     <ul>
-      <li>Developed SolidWorks CAD models and mechanical hardware for internal and electro-optical support applications.</li>
-      <li>Designed optical-mount fixtures and supported hardware development for future thermal vacuum (TVAC) testing.</li>
-      <li>Participated in tolerance analysis, design iteration, and system-integration discussions.</li>
+      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, and laboratory testing.</li>
+      <li>Performed UV-Vis spectrophotometry, followed cleanroom procedures, analyzed data, and documented preliminary findings.</li>
     </ul>
   </div>
+
+</div>
+
+<div class="exp-section-head">
+  <h2>Education</h2>
+  <span class="exp-count">Latest → Earliest</span>
+</div>
+
+<div class="exp-tree">
 
   <div class="exp-node" data-cat="education">
     <div class="exp-node-head">
@@ -228,6 +258,19 @@ author_profile: true
     <p class="exp-org">Northeastern University — Boston, MA</p>
     <ul>
       <li>Incoming Fall 2026.</li>
+    </ul>
+  </div>
+
+  <div class="exp-node" data-cat="education">
+    <div class="exp-node-head">
+      <span class="exp-tag">Education</span>
+      <span class="exp-dates">Sep 2021 – May 2025</span>
+    </div>
+    <h3>B.S. Biomedical Engineering</h3>
+    <p class="exp-org">Rutgers University, School of Engineering — New Brunswick, NJ</p>
+    <ul>
+      <li>Coursework in biomaterials, biomechanics, and biomedical devices, focused on the mechanical, biological, and chemical behavior of engineered systems.</li>
+      <li>Performed mechanical testing, failure analysis, and data analysis using Instron machines and optical microscopy.</li>
     </ul>
   </div>
 
