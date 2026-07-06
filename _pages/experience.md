@@ -238,7 +238,10 @@ author_profile: true
 
 <div class="exp-tree">
 
-  <div class="exp-node" data-cat="experience">
+  <div class="exp-node exp-node--media" data-cat="experience">
+    <div class="exp-node-media">
+      <img src="{{ '/images/logos/volta.png' | relative_url }}" alt="Volta Space Technologies logo">
+    </div>
     <div class="exp-node-head">
       <span class="exp-tag">Experience</span>
       <span class="exp-dates">Apr 2026 – Jul 2026</span>
