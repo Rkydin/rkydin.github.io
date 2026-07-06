@@ -260,7 +260,7 @@ redirect_from:
 </div>
 
 <div class="bp-intro">
-  <p>I'm a recent Rutgers BME graduate committed to Northeastern University's MS in Mechanical Engineering starting Fall 2026. I've been designing in SolidWorks for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. I'm passionate about robotics, assistive technology, and space exploration — looking to fill this page with projects that push the boundaries of what's possible.</p>
+  <p>I'm a Rutgers BME graduate working as a mechanical designer, and I'm working to grow beyond design alone into more theoretical and R&amp;D-focused engineering. I'll be starting an MS in Mechanical Engineering with a concentration in Materials at Northeastern this fall. I've been designing in CAD for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. My interests span space, robotics, MEMS, and energy systems — looking to fill this page with projects that push the boundaries of what's possible.</p>
   <div class="bp-tags-river">
     <div class="bp-tags-track">
       <span class="bp-tag">SolidWorks</span>
@@ -306,19 +306,19 @@ redirect_from:
 <div class="bp-titleblock">
   <div class="bp-titleblock-cell">
     <span class="bp-label">Location</span>
-    <span class="bp-value">New Jersey, US</span>
+    <span class="bp-value">New Jersey, US — open to relocation</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Next</span>
-    <span class="bp-value">MS ME, Northeastern — Fall 2026</span>
+    <span class="bp-value">MS ME (Materials), Northeastern — Fall 2026</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Focus</span>
-    <span class="bp-value">Robotics / Assistive Tech / Space</span>
+    <span class="bp-value">Space / Robotics / MEMS / Energy</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Primary Tool</span>
-    <span class="bp-value">SolidWorks — 4 yrs</span>
+    <span class="bp-value">CAD — 4 yrs</span>
   </div>
 </div>
 
