@@ -86,6 +86,54 @@ author_profile: true
   margin-bottom: 0;
 }
 
+.exp-node--media {
+  padding-right: 92px;
+}
+
+.exp-node-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--global-border-color);
+  background: #fff;
+  padding: 10px;
+}
+
+.exp-node-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.exp-node-media--photo {
+  padding: 0;
+}
+
+.exp-node-media--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 540px) {
+  .exp-node--media {
+    padding-right: 44px;
+  }
+
+  .exp-node-media {
+    position: static;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+  }
+}
+
 .exp-node::before {
   content: "";
   position: absolute;
@@ -204,7 +252,10 @@ author_profile: true
     </ul>
   </div>
 
-  <div class="exp-node" data-cat="experience">
+  <div class="exp-node exp-node--media" data-cat="experience">
+    <div class="exp-node-media exp-node-media--photo">
+      <img src="{{ '/images/moleiq/moleiq.png' | relative_url }}" alt="MoleIQ pallet-handling robot">
+    </div>
     <div class="exp-node-head">
       <span class="exp-tag">Experience</span>
       <span class="exp-dates">Nov 2025 – Feb 2026</span>
@@ -240,7 +291,10 @@ author_profile: true
 
 <div class="exp-tree">
 
-  <div class="exp-node" data-cat="education">
+  <div class="exp-node exp-node--media" data-cat="education">
+    <div class="exp-node-media">
+      <img src="{{ '/images/logos/northeastern.svg' | relative_url }}" alt="Northeastern University logo">
+    </div>
     <div class="exp-node-head">
       <span class="exp-tag">Education</span>
       <span class="exp-dates">Sep 2026 – May 2028</span>
@@ -252,7 +306,10 @@ author_profile: true
     </ul>
   </div>
 
-  <div class="exp-node" data-cat="education">
+  <div class="exp-node exp-node--media" data-cat="education">
+    <div class="exp-node-media">
+      <img src="{{ '/images/logos/rutgers.svg' | relative_url }}" alt="Rutgers University logo">
+    </div>
     <div class="exp-node-head">
       <span class="exp-tag">Education</span>
       <span class="exp-dates">Sep 2021 – May 2025</span>
