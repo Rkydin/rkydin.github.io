@@ -1,6 +1,7 @@
 ---
 title: "Desktop Face Recognition Tool"
 excerpt: "Python application using OpenCV and face_recognition library with a Tkinter UI for enrolling and recognizing users from a webcam stream."
+category: "Software"
 date: 2025-05-01
 header:
   teaser: /images/face-recognition/main-menu.png

@@ -1,6 +1,7 @@
 ---
 title: "ParaSwing - Wheelchair-Mounted Golf Swing Assist Device"
 excerpt: "Senior capstone project: designed and built a wheelchair-mounted robotic assist device to help users perform a repeatable golf swing."
+category: "Assistive Tech"
 date: 2024-12-01
 collection: portfolio
 layout: portfolio

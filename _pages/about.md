@@ -8,161 +8,289 @@ redirect_from:
 ---
 
 <style>
-.intro-text {
-  margin-bottom: 40px;
-  font-size: 1.1em;
+.bp-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 18px;
+}
+
+.bp-eyebrow .bp-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--global-accent-color);
+  flex-shrink: 0;
+}
+
+.bp-intro {
+  max-width: 62ch;
+  font-size: 1.15em;
   line-height: 1.6;
 }
 
-.portfolio-masonry {
-  column-count: 2;
-  column-gap: 25px;
-  margin: 40px 0;
-  padding: 0;
+.bp-titleblock {
+  margin: 36px 0 48px;
+  border: 1px solid var(--global-border-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.portfolio-item {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 20px;
-  break-inside: avoid;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  position: relative;
+.bp-titleblock-cell {
+  padding: 14px 18px;
+  border-right: 1px solid var(--global-border-color);
 }
+.bp-titleblock-cell:last-child { border-right: none; }
 
-.portfolio-item:hover {
-  transform: translateY(-5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: auto;
+.bp-titleblock-cell .bp-label {
   display: block;
-  background: transparent;
-  transition: all 0.5s ease;
+  margin-bottom: 6px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
 }
 
-.portfolio-item:hover .portfolio-image {
-  transform: scale(1.05);
-  filter: blur(3px);
+.bp-titleblock-cell .bp-value {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+@media (max-width: 860px) {
+  .bp-titleblock { grid-template-columns: repeat(2, 1fr); }
+  .bp-titleblock-cell:nth-child(2) { border-right: none; }
+}
+@media (max-width: 480px) {
+  .bp-titleblock { grid-template-columns: 1fr; }
+  .bp-titleblock-cell { border-right: none; border-bottom: 1px solid var(--global-border-color); }
+}
+
+.bp-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.bp-section-head h2 {
+  margin: 0;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+.bp-section-head .bp-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.bp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--global-border-color);
+  border: 1px solid var(--global-border-color);
+  margin-bottom: 40px;
+}
+
+.bp-grid a.bp-card {
+  background: var(--global-card-bg-color);
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: var(--global-text-color);
+  transition: background 0.18s ease;
+}
+
+.bp-grid a.bp-card:hover,
+.bp-grid a.bp-card:hover * {
+  text-decoration: none;
+}
+
+.bp-grid a.bp-card:hover {
+  background: var(--global-bg-color);
+}
+
+.bp-card-strip {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  justify-content: space-between;
+  padding: 10px 16px;
 }
 
-.portfolio-item:hover .portfolio-overlay {
-  opacity: 1;
+.bp-card-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border: 1px solid var(--global-line-color);
+  color: var(--global-line-color);
 }
 
-.portfolio-title {
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 600;
-  margin: 0 0 10px 0;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  line-height: 1.3;
-  text-align: center;
+.bp-card-sheet {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  color: var(--global-text-color-light);
 }
 
-.portfolio-excerpt {
-  color: #fff;
-  font-size: 0.9em;
-  margin: 0;
-  opacity: 0.95;
-  line-height: 1.4;
-  text-align: center;
+.bp-card-image {
+  height: 168px;
+  border-top: 1px solid var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
+  overflow: hidden;
 }
 
-.portfolio-date {
-  color: #fff;
-  font-size: 0.85em;
-  margin-top: 8px;
-  opacity: 0.8;
-  font-style: italic;
+.bp-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  text-align: center;
+  transition: transform 0.4s ease;
 }
 
-html.dark .portfolio-item,
-body.dark .portfolio-item,
-.greedy-nav--dark .portfolio-item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.bp-card:hover .bp-card-image img {
+  transform: scale(1.04);
 }
 
-html.dark .portfolio-item:hover,
-body.dark .portfolio-item:hover,
-.greedy-nav--dark .portfolio-item:hover {
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.bp-card-body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-@media (max-width: 1200px) {
-  .portfolio-masonry {
-    column-count: 1;
-  }
+.bp-card-body h3 {
+  font-size: 1.05em;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .portfolio-masonry {
-    column-count: 1;
-  }
-  
-  .portfolio-item {
-    border-radius: 15px;
-  }
+.bp-card-body p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.92em;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.bp-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid var(--global-border-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+}
+
+.bp-card-foot .bp-date { color: var(--global-text-color-light); }
+
+.bp-card-open {
+  color: var(--global-accent-color);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bp-card-open svg { width: 10px; height: 10px; transition: transform 0.15s ease; }
+.bp-card:hover .bp-card-open svg { transform: translateX(3px); }
+
+.bp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.bp-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
 }
 </style>
 
-<div class="intro-text">
-  <p>I'm a recent Rutgers BME graduate committed to Northeastern University's MS in Mechanical Engineering (Fall 2026). I've been designing with SolidWorks for about 4 years, have experience with several programming languages, and build and develop hardware using 3D-printed parts. I'm passionate about robotics, assistive technology, and space exploration. Looking to fill this page with projects that push the boundaries of what's possible.</p>
+<div class="bp-eyebrow">
+  <span class="bp-dot"></span>
+  <span>Engineering Portfolio — Rev. 2026</span>
 </div>
 
-<h2>Projects</h2>
+<div class="bp-intro">
+  <p>I'm a recent Rutgers BME graduate committed to Northeastern University's MS in Mechanical Engineering starting Fall 2026. I've been designing in SolidWorks for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. I'm passionate about robotics, assistive technology, and space exploration — looking to fill this page with projects that push the boundaries of what's possible.</p>
+  <div class="bp-tags">
+    <span class="bp-tag">SolidWorks</span>
+    <span class="bp-tag">Python</span>
+    <span class="bp-tag">OpenCV</span>
+    <span class="bp-tag">3D Printing</span>
+    <span class="bp-tag">GD&amp;T</span>
+    <span class="bp-tag">Mechanism Design</span>
+  </div>
+</div>
 
-<div class="portfolio-masonry">
+<div class="bp-titleblock">
+  <div class="bp-titleblock-cell">
+    <span class="bp-label">Location</span>
+    <span class="bp-value">New Jersey, US</span>
+  </div>
+  <div class="bp-titleblock-cell">
+    <span class="bp-label">Next</span>
+    <span class="bp-value">MS ME, Northeastern — Fall 2026</span>
+  </div>
+  <div class="bp-titleblock-cell">
+    <span class="bp-label">Focus</span>
+    <span class="bp-value">Robotics / Assistive Tech / Space</span>
+  </div>
+  <div class="bp-titleblock-cell">
+    <span class="bp-label">Primary Tool</span>
+    <span class="bp-value">SolidWorks — 4 yrs</span>
+  </div>
+</div>
+
+<div class="bp-section-head">
+  <h2>Selected Work</h2>
+  <span class="bp-label">{{ site.portfolio.size }} Sheets</span>
+</div>
+
+<div class="bp-grid">
 {% for post in site.portfolio %}
-  <a href="{{ post.url | relative_url }}" class="portfolio-item">
-    {% if post.header.teaser %}
-      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
-    {% elsif post.image %}
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="portfolio-image">
-    {% else %}
-      <div class="portfolio-image" style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-    {% endif %}
-    
-    <div class="portfolio-overlay">
-      <h2 class="portfolio-title">{{ post.title }}</h2>
-      <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-      {% if post.date %}
-        <span class="portfolio-date">{{ post.date | date: "%B %Y" }}</span>
+  <a href="{{ post.url | relative_url }}" class="bp-card">
+    <div class="bp-card-strip">
+      <span class="bp-card-tag">{{ post.category | default: "Project" }}</span>
+      <span class="bp-card-sheet">SHT {{ forloop.index | prepend: "00" | slice: -2, 2 }}/{{ site.portfolio.size | prepend: "00" | slice: -2, 2 }}</span>
+    </div>
+    <div class="bp-card-image">
+      {% if post.header.teaser %}
+        <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+      {% elsif post.image %}
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
       {% endif %}
+    </div>
+    <div class="bp-card-body">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <div class="bp-card-foot">
+        <span class="bp-date">{% if post.date %}{{ post.date | date: "%b %Y" }}{% else %}Ongoing{% endif %}</span>
+        <span class="bp-card-open">Open <svg viewBox="0 0 12 12"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+      </div>
     </div>
   </a>
 {% endfor %}

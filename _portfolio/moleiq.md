@@ -1,6 +1,7 @@
 ---
 title: "MoleIQ - Commercial Product Development"
 excerpt: "Redesigning production hardware for a pallet-handling robot with focus on manufacturability and GD&T documentation."
+category: "Product Design"
 collection: portfolio
 layout: portfolio
 author_profile: true

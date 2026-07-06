@@ -1,6 +1,7 @@
 ---
 title: "UltraLight Sleeping Pad Pump"
 excerpt: "Compact, lightweight inflator for backpacking sleeping pads."
+category: "Outdoor Gear"
 collection: portfolio
 layout: portfolio
 author_profile: true

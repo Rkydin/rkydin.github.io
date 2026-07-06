@@ -1,6 +1,7 @@
 ---
 title: "Miscellaneous Projects"
 excerpt: "A collection of random things I've made."
+category: "Misc"
 collection: portfolio
 layout: portfolio
 author_profile: true

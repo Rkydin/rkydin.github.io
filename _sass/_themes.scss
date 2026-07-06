@@ -15,11 +15,14 @@ $indent-var                 : 1.3em;
 
 /* System typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$sans-serif                 : "IBM Plex Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace                  : "IBM Plex Mono", Monaco, Consolas, "Lucida Console", monospace;
+
+/* Condensed display typeface, used for headings */
+$condensed                  : "IBM Plex Sans Condensed", $sans-serif;
 
 /* Sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
+$sans-serif-narrow          : $monospace;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* Serif typefaces */
@@ -40,7 +43,7 @@ $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : $condensed;
 $caption-font-family        : $serif;
 
 /* ==========================================================================

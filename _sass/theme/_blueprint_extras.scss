@@ -1,0 +1,69 @@
+/* ==========================================================================
+   BLUEPRINT EXTRAS
+   Structural tweaks layered on top of the blueprint color skin
+   ========================================================================== */
+
+/* Masthead / site title -------------------------------------------------- */
+
+.masthead__menu-item--lg {
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    &::before {
+      content: "RK";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.8em;
+      height: 1.8em;
+      font-size: 0.65em;
+      font-weight: 500;
+      letter-spacing: 0;
+      border: 1.5px solid var(--global-masthead-link-color);
+    }
+  }
+}
+
+.masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle) a {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    color: var(--global-accent-color);
+    border-bottom-color: var(--global-accent-color);
+  }
+}
+
+/* Buttons ------------------------------------------------------------------ */
+
+.btn {
+  font-family: $monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: var(--global-accent-color);
+
+  &:hover {
+    background-color: var(--global-link-color-hover);
+  }
+}
+
+/* Headings ------------------------------------------------------------------ */
+
+h1, h2, h3 {
+  letter-spacing: 0.01em;
+}
+
+/* Section rule under page/archive titles, echoes the drafting title block */
+.page__title,
+.archive__item-title {
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.3em;
+}

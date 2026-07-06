@@ -1,6 +1,7 @@
 ---
 title: "Surgical-Inspired Robotic Arm"
 excerpt: "Building an affordable teleoperated robotic arm with 7 degrees of freedom for precise human-like movements."
+category: "Robotics"
 collection: portfolio
 layout: portfolio
 author_profile: true

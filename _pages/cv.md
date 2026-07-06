@@ -13,56 +13,26 @@ redirect_from:
 .resume-download-btn {
   display: inline-block;
   padding: 15px 40px;
-  background-color: #000;
+  background-color: var(--global-accent-color);
   color: #fff;
   text-decoration: none !important;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.1em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border: 2px solid transparent;
+  letter-spacing: 0.06em;
+  transition: opacity 0.15s ease;
+  border: 1px solid var(--global-accent-color);
 }
 
 .resume-download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  background-color: #333;
+  opacity: 0.85;
   text-decoration: none !important;
 }
 
 .resume-download-btn:focus,
 .resume-download-btn:active {
   text-decoration: none !important;
-}
-
-/* Dark mode styles */
-.greedy-nav--dark .resume-download-btn,
-html.dark .resume-download-btn,
-body.dark .resume-download-btn {
-  background-color: #fff;
-  color: #000;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-
-.greedy-nav--dark .resume-download-btn:hover,
-html.dark .resume-download-btn:hover,
-body.dark .resume-download-btn:hover {
-  background-color: #f0f0f0;
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
-}
-
-/* Air theme compatibility */
-[data-theme="air"] .resume-download-btn {
-  background-color: #000;
-  color: #fff;
-}
-
-[data-theme="air-dark"] .resume-download-btn {
-  background-color: #fff;
-  color: #000;
 }
 </style>
 
