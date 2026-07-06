@@ -36,7 +36,7 @@ Designed and built a portable, ultralight pump for inflating sleeping pads durin
   <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #999;"><em>V3 full assembly</em></p>
 </div>
 
-V3 replaces v2's off-the-shelf blower fan and USB-C trigger board with a custom coreless motor and 3D-printed impeller driven by a custom-designed PCB. The fan is now **inline with the inlet and outlet** instead of diverted off to the side, and the whole housing is sealed rather than just held together.
+V3 replaces v2's off-the-shelf blower fan and USB-C trigger board with a custom coreless motor and 3D-printed impeller driven by a custom-designed PCB. The fan is now **inline with the inlet and outlet** instead of diverted off to the side. The housing was already sealed, but air now has to cross one more wall to leak — the middle spacer piece between the top and bottom covers — making the assembly harder to leak through than before.
 
 ### Housing Design
 
