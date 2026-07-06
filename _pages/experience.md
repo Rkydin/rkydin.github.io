@@ -183,15 +183,6 @@ author_profile: true
 }
 </style>
 
-<div class="exp-eyebrow">
-  <span class="exp-dot"></span>
-  <span>Career &amp; Education Timeline</span>
-</div>
-
-<div class="exp-intro">
-  <p>Work experience and education, each newest first.</p>
-</div>
-
 <div class="exp-section-head">
   <h2>Experience</h2>
   <span class="exp-count">Latest → Earliest</span>
