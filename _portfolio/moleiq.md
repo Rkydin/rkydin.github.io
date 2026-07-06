@@ -2,6 +2,7 @@
 title: "MoleIQ - Commercial Product Development"
 excerpt: "Redesigning production hardware for a pallet-handling robot with focus on manufacturability and GD&T documentation."
 category: "Product Design"
+date: 2026-02-01
 last_updated: 2026-01-18
 collection: portfolio
 layout: portfolio
@@ -18,12 +19,13 @@ header:
 </style>
 
 **Company:** Robomekanics (OEM-Backed by Wild Iron)  
-**Duration:** November 2025 - Present  
-**Location:** Teterboro, NJ
+**Duration:** November 2025 - February 2026  
+**Location:** Teterboro, NJ  
+**Status:** Complete
 
 ## Project Overview
 
-Redesigning production hardware for the MoleIQ pallet-handling robot with emphasis on manufacturability, machining constraints, and assembly sequence. Working to transition existing designs into production-ready components with proper tolerance control and clear design intent.
+Redesigned production hardware for the MoleIQ pallet-handling robot with emphasis on manufacturability, machining constraints, and assembly sequence. Transitioned existing designs into production-ready components with proper tolerance control and clear design intent.
 
 <div style="margin: 30px 0;">
   <img src="/images/moleiq/moleiq.png" alt="MoleIQ Product" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
