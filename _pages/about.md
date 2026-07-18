@@ -270,6 +270,8 @@ redirect_from:
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
+      <span class="bp-tag">Abaqus</span>
+      <span class="bp-tag">Oscilloscopes</span>
       <span class="bp-tag">3D Printing</span>
       <span class="bp-tag">Rapid Prototyping</span>
       <span class="bp-tag">Mechanism Design</span>
@@ -288,6 +290,8 @@ redirect_from:
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
+      <span class="bp-tag">Abaqus</span>
+      <span class="bp-tag">Oscilloscopes</span>
       <span class="bp-tag">3D Printing</span>
       <span class="bp-tag">Rapid Prototyping</span>
       <span class="bp-tag">Mechanism Design</span>

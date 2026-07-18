@@ -298,9 +298,11 @@ author_profile: true
     <h3>Mechanical Design Intern</h3>
     <p class="exp-org">Volta Space Technologies — Broomfield, CO</p>
     <ul>
+      <li>Designed a CAD enclosure housing a laser assembly and its associated optical fixtures for shipment and testing, supporting delivery to the European Space Agency (ESA).</li>
+      <li>Gained hands-on exposure to electromechanical assembly, including soldering and cable harnessing, through hardware build support.</li>
       <li>Developed SolidWorks CAD models and mechanical hardware for internal and electro-optical support applications.</li>
       <li>Designed optical-mount fixtures and supported hardware development for future thermal vacuum (TVAC) testing.</li>
-      <li>Participated in tolerance analysis, design iteration, and system-integration discussions.</li>
+      <li>Maintained drawing and BOM revision control through ECOs and redlines, ensuring documentation accuracy across engineering and technical reporting.</li>
     </ul>
     <div class="exp-photo-river">
       <div class="exp-photo-track">
@@ -327,22 +329,22 @@ author_profile: true
     <h3>Mechanical Engineer (Contract, 3 months)</h3>
     <p class="exp-org">Robomekanics — Teterboro, NJ</p>
     <ul>
-      <li>Converted legacy metric CAD assemblies into inch-based production models and ASME Y14.5-compliant drawings for pallet-handling robotics within an ISO 9001 quality program.</li>
-      <li>Performed tolerance stack-ups on sheet-metal and welded assemblies to resolve fit-up, interference, and failure issues.</li>
-      <li>Designed welding and assembly fixtures to control distortion, maintain alignment, and improve fabrication repeatability.</li>
+      <li>Reduced part count by 15% across pallet-handling robotics assemblies by redesigning and merging components during the metric-to-inch CAD conversion, cutting fabrication and assembly labor.</li>
+      <li>Converted legacy metric CAD assemblies into inch-based production models and ASME Y14.5-compliant drawings within an ISO 9001 quality program.</li>
+      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies by performing tolerance stack-ups and revising geometry with machinists and fabricators.</li>
+      <li>Designed welding/assembly fixtures and updated build procedures with redlined drawings, improving fabrication repeatability and reducing prototype rework.</li>
     </ul>
   </div>
 
   <div class="exp-node" data-cat="experience">
     <div class="exp-node-head">
       <span class="exp-tag">Experience</span>
-      <span class="exp-dates">Summer 2021</span>
+      <span class="exp-dates">Apr 2021 – Aug 2021</span>
     </div>
     <h3>Research Assistant</h3>
     <p class="exp-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
     <ul>
-      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, and laboratory testing.</li>
-      <li>Performed UV-Vis spectrophotometry, followed cleanroom procedures, analyzed data, and documented preliminary findings.</li>
+      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, UV-Vis spectrophotometry, and cleanroom laboratory testing.</li>
     </ul>
   </div>
 
@@ -383,6 +385,7 @@ author_profile: true
     <ul>
       <li>Coursework in biomaterials, biomechanics, and biomedical devices, focused on the mechanical, biological, and chemical behavior of engineered systems.</li>
       <li>Performed mechanical testing, failure analysis, and data analysis using Instron machines and optical microscopy.</li>
+      <li>Conducted electronics lab coursework using oscilloscopes and digital multimeters, and ran FEA/simulation coursework in SolidWorks, SolidWorks Simulation, and Abaqus.</li>
     </ul>
   </div>
 
