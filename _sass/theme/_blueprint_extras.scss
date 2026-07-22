@@ -42,6 +42,12 @@
   }
 }
 
+/* Hamburger toggle — was using --global-base-color, which flips to a
+   near-white fill in dark mode and reads as a jarring blank box */
+.greedy-nav button {
+  background-color: var(--global-accent-color) !important;
+}
+
 /* Buttons ------------------------------------------------------------------ */
 
 .btn {
