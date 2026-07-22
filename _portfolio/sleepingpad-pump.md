@@ -2,6 +2,7 @@
 title: "UltraLight Sleeping Pad Pump"
 excerpt: "Compact, lightweight inflator for backpacking sleeping pads."
 category: "Outdoor Gear"
+skills: ["SolidWorks", "KiCad", "PCB Design", "PETG 3D Printing"]
 last_updated: 2026-07-06
 collection: portfolio
 layout: portfolio

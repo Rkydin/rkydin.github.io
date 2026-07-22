@@ -2,6 +2,7 @@
 title: "Surgical-Inspired Robotic Arm"
 excerpt: "Building an affordable teleoperated robotic arm with 7 degrees of freedom for precise human-like movements."
 category: "Robotics"
+skills: ["SolidWorks", "C++", "3D Printing", "Teleoperation"]
 last_updated: 2025-12-12
 collection: portfolio
 layout: portfolio

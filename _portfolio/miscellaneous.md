@@ -2,6 +2,7 @@
 title: "Miscellaneous Projects"
 excerpt: "A collection of random things I've made."
 category: "Misc"
+skills: ["3D Printing", "Prototyping", "SolidWorks"]
 last_updated: 2025-11-20
 collection: portfolio
 layout: portfolio

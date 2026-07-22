@@ -124,6 +124,51 @@ author_profile: true
 
 .bp-card-open svg { width: 10px; height: 10px; transition: transform 0.15s ease; }
 .bp-card:hover .bp-card-open svg { transform: translateX(3px); }
+
+.bp-card-skills-river {
+  position: relative;
+  overflow: hidden;
+  margin: 2px -16px -16px;
+  padding: 8px 0;
+  border-top: 1px solid var(--global-border-color);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent);
+}
+
+.bp-card-skills-track {
+  display: flex;
+  gap: 6px;
+  width: max-content;
+  padding: 0 16px;
+  animation: bp-card-river-flow 18s linear infinite;
+}
+
+.bp-card:hover .bp-card-skills-track {
+  animation-play-state: paused;
+}
+
+@keyframes bp-card-river-flow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-card-skills-track {
+    animation: none;
+  }
+}
+
+.bp-card-skill-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 </style>
 
 {% include base_path %}
@@ -151,6 +196,17 @@ author_profile: true
         <span class="bp-card-open">Open <svg viewBox="0 0 12 12"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
       </div>
     </div>
+    {% if post.skills %}
+      <div class="bp-card-skills-river">
+        <div class="bp-card-skills-track">
+          {% for i in (1..4) %}
+            {% for skill in post.skills %}
+              <span class="bp-card-skill-tag">{{ skill }}</span>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   </a>
 {% endfor %}
 </div>

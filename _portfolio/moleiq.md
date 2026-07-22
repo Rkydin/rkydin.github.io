@@ -2,6 +2,7 @@
 title: "MoleIQ - Commercial Product Development"
 excerpt: "Redesigning production hardware for a pallet-handling robot with focus on manufacturability and GD&T documentation."
 category: "Product Design"
+skills: ["SolidWorks", "GD&T", "DFM", "ASME Y14.5"]
 date: 2026-02-01
 last_updated: 2026-01-18
 collection: portfolio
