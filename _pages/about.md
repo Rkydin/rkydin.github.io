@@ -420,10 +420,10 @@ redirect_from:
   <p>I'm a Rutgers BME graduate working as a mechanical designer, and I'm working to grow beyond design alone into more theoretical and R&amp;D-focused engineering. I'll be starting an MS in Mechanical Engineering with a concentration in Materials at Northeastern this fall. I've been designing in CAD for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. My interests span space, robotics, MEMS, and energy systems — looking to fill this page with projects that push the boundaries of what's possible.</p>
   <div class="bp-tags-river">
     <div class="bp-tags-track">
-      <span class="bp-tag">SolidWorks</span>
-      <span class="bp-tag">Siemens NX</span>
       <span class="bp-tag">GD&amp;T</span>
       <span class="bp-tag">Tolerance Analysis</span>
+      <span class="bp-tag">SolidWorks</span>
+      <span class="bp-tag">Siemens NX</span>
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
@@ -440,10 +440,10 @@ redirect_from:
       <span class="bp-tag">Python</span>
       <span class="bp-tag">MATLAB</span>
       <span class="bp-tag">C++</span>
-      <span class="bp-tag">SolidWorks</span>
-      <span class="bp-tag">Siemens NX</span>
       <span class="bp-tag">GD&amp;T</span>
       <span class="bp-tag">Tolerance Analysis</span>
+      <span class="bp-tag">SolidWorks</span>
+      <span class="bp-tag">Siemens NX</span>
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
@@ -603,16 +603,16 @@ redirect_from:
   <div class="bp-skill-group">
     <h3>Mechanical Design</h3>
     <div class="bp-skill-tags">
-      <span class="bp-tag">SolidWorks</span>
-      <span class="bp-tag">SolidWorks Simulation</span>
-      <span class="bp-tag">Abaqus</span>
-      <span class="bp-tag">Siemens NX</span>
       <span class="bp-tag">GD&amp;T</span>
       <span class="bp-tag">Tolerance Stack-Ups</span>
+      <span class="bp-tag">2D Drawings</span>
+      <span class="bp-tag">SolidWorks</span>
+      <span class="bp-tag">Siemens NX</span>
+      <span class="bp-tag">SolidWorks Simulation</span>
+      <span class="bp-tag">Abaqus</span>
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
-      <span class="bp-tag">2D Drawings</span>
       <span class="bp-tag">BOM Management</span>
     </div>
   </div>
