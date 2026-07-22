@@ -344,6 +344,44 @@ redirect_from:
 .bp-node li:last-child {
   margin-bottom: 0;
 }
+
+.bp-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.bp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border: 1px solid var(--global-accent-color);
+  transition: opacity 0.15s ease;
+}
+
+.bp-btn:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+.bp-btn--solid {
+  background: var(--global-accent-color);
+  color: #fff;
+}
+
+.bp-btn--outline {
+  background: transparent;
+  color: var(--global-accent-color);
+}
 </style>
 
 <div class="bp-eyebrow">
@@ -529,4 +567,7 @@ redirect_from:
 
 </div>
 
-<p class="bp-label">See the full <a href="{{ '/portfolio/' | relative_url }}" style="color: var(--global-accent-color);">project portfolio</a>, or the <a href="{{ '/resume/' | relative_url }}" style="color: var(--global-accent-color);">full resume</a>.</p>
+<div class="bp-cta-row">
+  <a href="{{ '/portfolio/' | relative_url }}" class="bp-btn bp-btn--solid">View Full Portfolio →</a>
+  <a href="{{ '/resume/' | relative_url }}" class="bp-btn bp-btn--outline">Full Resume →</a>
+</div>
