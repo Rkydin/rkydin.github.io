@@ -480,10 +480,11 @@ redirect_from:
     <h3>Mechanical Design Intern</h3>
     <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
     <ul>
-      <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>.</li>
-      <li>Assembled electromechanical hardware, including <strong>soldering</strong> and <strong>cable harnessing</strong>.</li>
-      <li>Designed and 3D-printed optical-mount fixtures for fibers, lasers, lenses, and mirrors in <strong>SolidWorks</strong> and <strong>Fusion 360</strong>, applying <strong>GD&amp;T</strong> tolerancing for optical alignment ahead of future <strong>TVAC</strong> testing.</li>
-      <li>Sourced vendor quotes and coordinated manufacturing of aluminum sheet-metal and machined parts, designed and ordered optical breadboards, and documented procurement using the <strong>Microsoft 365</strong> suite.</li>
+      <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing.</li>
+      <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>, quoting and sourcing the parts to build it.</li>
+      <li>Designed optical-mount fixtures for fibers, lasers, lenses, and mirrors, supporting both test setups and safe transport of hardware, with <strong>GD&amp;T</strong> tolerancing ahead of future <strong>TVAC</strong> testing.</li>
+      <li>Ran the shop <strong>3D printer</strong> for rapid part prototyping as well as marketing and demo material.</li>
+      <li>Supported the team on general electromechanical build work, picking up <strong>soldering</strong> and <strong>cable harnessing</strong> along the way.</li>
     </ul>
     <div class="bp-photo-river">
       <div class="bp-photo-track">

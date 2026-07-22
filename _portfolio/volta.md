@@ -53,22 +53,26 @@ Mechanical Design Intern supporting Volta's laser-based wireless power beaming h
 
 ## Responsibilities
 
+**Documentation & Procurement:**
+* Owned documentation for parts and models across the build — SolidWorks drawings feeding spec sheets, vendor quoting, and invoicing
+* Sourced vendor quotes and coordinated manufacturing of aluminum sheet-metal and machined parts
+
 **CAD & Mechanical Design:**
 * Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in SolidWorks for delivery to the European Space Agency
-* Designed and 3D-printed optical-mount fixtures for fibers, lasers, lenses, and mirrors in SolidWorks and Fusion 360, applying GD&T tolerancing for optical alignment ahead of future TVAC testing
-* Assembled electromechanical hardware, including soldering and cable harnessing
+* Designed optical-mount fixtures for fibers, lasers, lenses, and mirrors in SolidWorks and Fusion 360, supporting both test setups and safe transport of hardware, applying GD&T tolerancing ahead of future TVAC testing
 
-**Procurement & Documentation:**
-* Sourced vendor quotes and coordinated manufacturing of aluminum sheet-metal and machined parts
-* Designed and ordered optical breadboards
-* Documented procurement using the Microsoft 365 suite
+**Prototyping & Build Support:**
+* Ran the shop's 3D printer for rapid part prototyping as well as marketing and demo material
+* Supported the team on general electromechanical build work, picking up soldering and cable harnessing along the way
 
 ## Skills Applied
 
 * SolidWorks and Fusion 360 (parts, assemblies, drawings)
+* Technical documentation (spec sheets, vendor quoting, invoicing)
 * Optical fixture and mount design
 * GD&T tolerancing for optical alignment
 * Thermal vacuum (TVAC) test support
 * Vendor sourcing and manufacturing coordination
+* Rapid prototyping (3D printing)
 * Electromechanical assembly (soldering, cable harnessing)
 * Cross-functional engineering collaboration
