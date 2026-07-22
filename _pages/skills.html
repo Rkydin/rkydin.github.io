@@ -18,7 +18,7 @@ author_profile: true
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--global-text-color-light);
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .bp-eyebrow .bp-dot {
@@ -28,29 +28,39 @@ author_profile: true
   flex-shrink: 0;
 }
 
-.bp-section-head {
+/* Featured CAD proficiency block ------------------------------------- */
+
+.bp-cad-feature {
+  border: 1px solid var(--global-border-color);
+  margin-bottom: 40px;
+}
+
+.bp-cad-feature-head {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 0 0 20px;
-  padding-bottom: 14px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
   border-bottom: 1px solid var(--global-border-color);
+  background: var(--global-card-bg-color);
 }
 
-.bp-section-head:not(:first-of-type) {
-  margin-top: 48px;
+.bp-cad-feature-head svg {
+  width: 26px;
+  height: 26px;
+  color: var(--global-accent-color);
+  flex-shrink: 0;
 }
 
-.bp-section-head h2 {
+.bp-cad-feature-head h2 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.15em;
   text-transform: uppercase;
 }
 
-.bp-section-head .bp-label {
+.bp-cad-feature-head .bp-label {
+  margin-left: auto;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--global-text-color-light);
@@ -62,8 +72,6 @@ author_profile: true
   flex-direction: column;
   gap: 1px;
   background: var(--global-border-color);
-  border: 1px solid var(--global-border-color);
-  margin-bottom: 28px;
 }
 
 .bp-cad-tier {
@@ -71,7 +79,7 @@ author_profile: true
   align-items: baseline;
   flex-wrap: wrap;
   gap: 6px 14px;
-  padding: 14px 18px;
+  padding: 14px 20px;
   background: var(--global-card-bg-color);
 }
 
@@ -98,6 +106,46 @@ author_profile: true
     width: 100%;
   }
 }
+
+/* Skill category card grid -------------------------------------------- */
+
+.bp-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--global-border-color);
+  border: 1px solid var(--global-border-color);
+}
+
+.bp-skill-card {
+  background: var(--global-card-bg-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bp-skill-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bp-skill-card-head svg {
+  width: 22px;
+  height: 22px;
+  color: var(--global-line-color);
+  flex-shrink: 0;
+}
+
+.bp-skill-card h3 {
+  margin: 0;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Shared tag styling ---------------------------------------------------- */
 
 .bp-tag {
   font-family: "IBM Plex Mono", monospace;
@@ -128,81 +176,110 @@ author_profile: true
   <span>Skills — Tools &amp; Proficiency</span>
 </div>
 
-<div class="bp-section-head">
-  <h2>Parametric CAD</h2>
-  <span class="bp-label">By Proficiency</span>
-</div>
-
-<div class="bp-cad-tiers">
-  <div class="bp-cad-tier">
-    <span class="bp-cad-tier-label">Primary</span>
-    <div class="bp-cad-tier-tools">
-      <span class="bp-tag bp-tag--primary">SolidWorks</span>
+<div class="bp-cad-feature">
+  <div class="bp-cad-feature-head">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+    <h2>Parametric CAD</h2>
+    <span class="bp-label">By Proficiency</span>
+  </div>
+  <div class="bp-cad-tiers">
+    <div class="bp-cad-tier">
+      <span class="bp-cad-tier-label">Primary</span>
+      <div class="bp-cad-tier-tools">
+        <span class="bp-tag bp-tag--primary">SolidWorks</span>
+      </div>
+    </div>
+    <div class="bp-cad-tier">
+      <span class="bp-cad-tier-label">Also Used</span>
+      <div class="bp-cad-tier-tools">
+        <span class="bp-tag">Siemens NX</span>
+      </div>
+    </div>
+    <div class="bp-cad-tier">
+      <span class="bp-cad-tier-label">Same Paradigm — Fast Ramp-Up</span>
+      <div class="bp-cad-tier-tools">
+        <span class="bp-tag">Fusion 360</span>
+        <span class="bp-tag">FreeCAD</span>
+      </div>
     </div>
   </div>
-  <div class="bp-cad-tier">
-    <span class="bp-cad-tier-label">Also Used</span>
-    <div class="bp-cad-tier-tools">
-      <span class="bp-tag">Siemens NX</span>
+</div>
+
+<div class="bp-skills-grid">
+
+  <div class="bp-skill-card">
+    <div class="bp-skill-card-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      <h3>Design &amp; Analysis</h3>
+    </div>
+    <div class="bp-skill-tags">
+      <span class="bp-tag">GD&amp;T</span>
+      <span class="bp-tag">Tolerance Stack-Ups</span>
+      <span class="bp-tag">2D Drawings</span>
+      <span class="bp-tag">BOM Management</span>
+      <span class="bp-tag">DFM</span>
+      <span class="bp-tag">DFA</span>
+      <span class="bp-tag">FEA</span>
+      <span class="bp-tag">SolidWorks Simulation</span>
+      <span class="bp-tag">Abaqus</span>
     </div>
   </div>
-  <div class="bp-cad-tier">
-    <span class="bp-cad-tier-label">Same Paradigm — Fast Ramp-Up</span>
-    <div class="bp-cad-tier-tools">
-      <span class="bp-tag">Fusion 360</span>
-      <span class="bp-tag">FreeCAD</span>
+
+  <div class="bp-skill-card">
+    <div class="bp-skill-card-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2-2z"/></svg>
+      <h3>Manufacturing</h3>
+    </div>
+    <div class="bp-skill-tags">
+      <span class="bp-tag">Prototype Assembly</span>
+      <span class="bp-tag">Fixture Design</span>
+      <span class="bp-tag">Root Cause Analysis</span>
+      <span class="bp-tag">ISO 9001</span>
     </div>
   </div>
-</div>
 
-<div class="bp-section-head">
-  <h2>Mechanical Design &amp; Analysis</h2>
-</div>
+  <div class="bp-skill-card">
+    <div class="bp-skill-card-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6M10 3v5.5L4.5 18a2 2 0 001.7 3h11.6a2 2 0 001.7-3L14 8.5V3"/><path d="M7.5 14h9"/></svg>
+      <h3>Laboratory</h3>
+    </div>
+    <div class="bp-skill-tags">
+      <span class="bp-tag">Mechanical Testing</span>
+      <span class="bp-tag">Failure Analysis</span>
+      <span class="bp-tag">Data Analysis</span>
+      <span class="bp-tag">Instron Testing</span>
+      <span class="bp-tag">Optical Microscopy</span>
+      <span class="bp-tag">GLP</span>
+      <span class="bp-tag">Oscilloscopes</span>
+      <span class="bp-tag">DMM</span>
+    </div>
+  </div>
 
-<div class="bp-skill-tags" style="margin-bottom: 40px;">
-  <span class="bp-tag">GD&amp;T</span>
-  <span class="bp-tag">Tolerance Stack-Ups</span>
-  <span class="bp-tag">2D Drawings</span>
-  <span class="bp-tag">BOM Management</span>
-  <span class="bp-tag">DFM</span>
-  <span class="bp-tag">DFA</span>
-  <span class="bp-tag">FEA</span>
-  <span class="bp-tag">SolidWorks Simulation</span>
-  <span class="bp-tag">Abaqus</span>
-</div>
+  <div class="bp-skill-card">
+    <div class="bp-skill-card-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg>
+      <h3>Programming</h3>
+    </div>
+    <div class="bp-skill-tags">
+      <span class="bp-tag">Python</span>
+      <span class="bp-tag">MATLAB</span>
+      <span class="bp-tag">C++</span>
+    </div>
+  </div>
 
-<div class="bp-section-head">
-  <h2>Manufacturing</h2>
-</div>
+  <div class="bp-skill-card">
+    <div class="bp-skill-card-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="4" width="14" height="17" rx="1"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>
+      <h3>Program &amp; Documentation</h3>
+    </div>
+    <div class="bp-skill-tags">
+      <span class="bp-tag">Microsoft 365</span>
+      <span class="bp-tag">Technical Documentation</span>
+      <span class="bp-tag">ECO / Change Control</span>
+      <span class="bp-tag">Part Requisition</span>
+      <span class="bp-tag">Inventory Management</span>
+      <span class="bp-tag">Cross-Functional Collaboration</span>
+    </div>
+  </div>
 
-<div class="bp-skill-tags" style="margin-bottom: 40px;">
-  <span class="bp-tag">Prototype Assembly</span>
-  <span class="bp-tag">Fixture Design</span>
-  <span class="bp-tag">Root Cause Analysis</span>
-  <span class="bp-tag">ISO 9001</span>
-</div>
-
-<div class="bp-section-head">
-  <h2>Laboratory</h2>
-</div>
-
-<div class="bp-skill-tags" style="margin-bottom: 40px;">
-  <span class="bp-tag">Mechanical Testing</span>
-  <span class="bp-tag">Failure Analysis</span>
-  <span class="bp-tag">Data Analysis</span>
-  <span class="bp-tag">Instron Testing</span>
-  <span class="bp-tag">Optical Microscopy</span>
-  <span class="bp-tag">GLP</span>
-  <span class="bp-tag">Oscilloscopes</span>
-  <span class="bp-tag">DMM</span>
-</div>
-
-<div class="bp-section-head">
-  <h2>Programming</h2>
-</div>
-
-<div class="bp-skill-tags">
-  <span class="bp-tag">Python</span>
-  <span class="bp-tag">MATLAB</span>
-  <span class="bp-tag">C++</span>
 </div>
