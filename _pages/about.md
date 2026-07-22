@@ -480,7 +480,7 @@ redirect_from:
     <h3>Mechanical Design Intern</h3>
     <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
     <ul>
-      <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing.</li>
+      <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing, coordinated with the team through the <strong>Microsoft 365</strong> suite.</li>
       <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>, quoting and sourcing the parts to build it.</li>
       <li>Designed optical-mount fixtures for fibers, lasers, lenses, and mirrors, supporting both test setups and safe transport of hardware, with <strong>GD&amp;T</strong> tolerancing ahead of future <strong>TVAC</strong> testing.</li>
       <li>Ran the shop <strong>3D printer</strong> for rapid part prototyping as well as marketing and demo material.</li>
@@ -513,10 +513,11 @@ redirect_from:
     <h3>Mechanical Engineer (Contract, 3 months)</h3>
     <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
     <ul>
-      <li>Reduced part count by <strong>15%</strong> across pallet-handling robotics assemblies by redesigning and merging components during the metric-to-inch CAD conversion, cutting fabrication and assembly labor.</li>
-      <li>Converted legacy metric CAD assemblies into inch-based production models and <strong>ASME Y14.5-2018</strong>-compliant drawings within an <strong>ISO 9001</strong> quality program, documented using the <strong>Microsoft 365</strong> suite.</li>
-      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies by performing <strong>tolerance stack-ups</strong> and revising geometry with machinists and fabricators.</li>
-      <li>Built on-demand prototypes directly from rough concept sketches, translating informal design intent into functional hardware under tight turnaround.</li>
+      <li>Focused on converting legacy metric CAD assemblies and drawings to imperial, applying <strong>ASME Y14.5-2018</strong> <strong>GD&amp;T</strong> along the way within an <strong>ISO 9001</strong> quality program.</li>
+      <li>Made <strong>DFM</strong> modifications suited to the US supply chain and market, redesigning and merging components to reduce part count by <strong>15%</strong> and ease manufacturability.</li>
+      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies through <strong>tolerance stack-ups</strong>, working directly with machinists and fabricators.</li>
+      <li>Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch.</li>
+      <li>Used the <strong>Microsoft 365</strong> suite for team meetings, documentation, and coordination throughout.</li>
     </ul>
   </div>
 
@@ -528,7 +529,7 @@ redirect_from:
     <h3>Research Assistant</h3>
     <p class="bp-node-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
     <ul>
-      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, <strong>UV-Vis spectrophotometry</strong>, and cleanroom laboratory testing.</li>
+      <li>Researched and tested for the presence and quantity of microplastics in consumer detergents and locally caught seafood, through sample preparation, filtration, <strong>UV-Vis spectrophotometry</strong>, and cleanroom laboratory testing.</li>
     </ul>
   </div>
 

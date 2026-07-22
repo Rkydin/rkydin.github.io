@@ -4,7 +4,7 @@ excerpt: "Redesigning production hardware for a pallet-handling robot with focus
 category: "Product Design"
 skills: ["SolidWorks", "GD&T", "DFM", "ASME Y14.5"]
 date: 2026-02-01
-last_updated: 2026-01-18
+last_updated: 2026-07-22
 collection: portfolio
 layout: portfolio
 author_profile: true
@@ -26,7 +26,7 @@ header:
 
 ## Project Overview
 
-Redesigned production hardware for the MoleIQ pallet-handling robot with emphasis on manufacturability, machining constraints, and assembly sequence. Transitioned existing designs into production-ready components with proper tolerance control and clear design intent.
+Focused on converting the MoleIQ pallet-handling robot's legacy metric CAD and drawings to imperial, making DFM modifications along the way to fit the US supply chain and market. Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch — and revised designs to cut part count and ease manufacturability.
 
 <div style="margin: 30px 0;">
   <img src="/images/moleiq/moleiq.png" alt="MoleIQ Product" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
@@ -35,37 +35,19 @@ Redesigned production hardware for the MoleIQ pallet-handling robot with emphasi
 
 ## Responsibilities
 
-**Design for Manufacturing:**
-* Applying DFM principles to reduce part count and simplify geometry
-* Redesigning components for machining constraints and assembly sequence
-* Tightening tolerance stack-ups for repeatable fabrication
-* Optimizing designs for production efficiency
+**Metric-to-Imperial Conversion:**
+* Converted legacy metric CAD assemblies and drawings into inch-based production models for the US market
+* Made DFM modifications suited to US manufacturing and sourcing
+* Redesigned and merged components, cutting part count 15% and easing manufacturability
 
 **CAD & Documentation:**
-* Developing production-ready SolidWorks parts, assemblies, and drawings
-* Maintaining clear design intent and tolerance control
-* Authoring ASME Y14.5-2018 compliant drawings
-* Defining datums, position/profile tolerances, and functional fits
+* Developed production-ready SolidWorks parts, assemblies, and drawings, authored to ASME Y14.5-2018 within an ISO 9001 quality program
+* Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies through tolerance stack-ups, working directly with machinists and fabricators
+* Coordinated documentation and team meetings through the Microsoft 365 suite
 
-**Production Support:**
-* Managing part inventory and production components
-* Supporting builds, revisions, and manufacturing release
-* Coordinating with manufacturing engineers on production readiness
-* Creating complete CAD packages for fabrication
-
-## Technical Focus
-
-**GD&T Application:**
-* ASME Y14.5-2018 standards
-* Datum reference frames
-* Position and profile tolerancing
-* Functional fit specifications
-
-**Design Optimization:**
-* Part count reduction
-* Geometry simplification
-* Tolerance stack-up analysis
-* Assembly sequence planning
+**On-the-Floor Design:**
+* Worked directly with machinists and fabricators, sometimes translating a napkin or sticky-note sketch into a finished, manufacturable part
+* Supported builds, revisions, and manufacturing release
 
 ## Skills Applied
 
@@ -73,6 +55,6 @@ Redesigned production hardware for the MoleIQ pallet-handling robot with emphasi
 * GD&T per ASME Y14.5-2018
 * Design for manufacturability (DFM)
 * Tolerance analysis and stack-ups
-* Production documentation
-* Part inventory management
+* Metric-to-imperial conversion
+* Microsoft 365 suite (documentation, team coordination)
 * Cross-functional collaboration
