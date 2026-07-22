@@ -480,18 +480,19 @@ redirect_from:
     <h3>Mechanical Design Intern</h3>
     <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
     <ul>
-      <li>Designed a CAD enclosure housing a laser assembly and its associated optical fixtures for shipment and testing, supporting delivery to the <strong>European Space Agency (ESA)</strong>.</li>
-      <li>Gained hands-on exposure to electromechanical assembly, including <strong>soldering</strong> and <strong>cable harnessing</strong>, through hardware build support.</li>
-      <li>Developed <strong>SolidWorks</strong> CAD models and mechanical hardware for internal and electro-optical support applications.</li>
-      <li>Designed optical-mount fixtures and supported hardware development for future <strong>thermal vacuum (TVAC)</strong> testing.</li>
-      <li>Maintained drawing and BOM revision control through <strong>ECOs</strong> and <strong>redlines</strong>, ensuring documentation accuracy across engineering and technical reporting.</li>
+      <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>.</li>
+      <li>Assembled electromechanical hardware, including <strong>soldering</strong> and <strong>cable harnessing</strong>.</li>
+      <li>Designed and 3D-printed optical-mount fixtures for fibers, lasers, lenses, and mirrors in <strong>SolidWorks</strong> and <strong>Fusion 360</strong>, applying <strong>GD&amp;T</strong> tolerancing for optical alignment ahead of future <strong>TVAC</strong> testing.</li>
+      <li>Sourced vendor quotes and coordinated manufacturing of aluminum sheet-metal and machined parts, designed and ordered optical breadboards, and documented procurement using the <strong>Microsoft 365</strong> suite.</li>
     </ul>
     <div class="bp-photo-river">
       <div class="bp-photo-track">
+        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
         <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
         <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
         <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
         <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
         <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
         <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
         <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
@@ -514,7 +515,7 @@ redirect_from:
       <li>Reduced part count by <strong>15%</strong> across pallet-handling robotics assemblies by redesigning and merging components during the metric-to-inch CAD conversion, cutting fabrication and assembly labor.</li>
       <li>Converted legacy metric CAD assemblies into inch-based production models and <strong>ASME Y14.5</strong>-compliant drawings within an <strong>ISO 9001</strong> quality program.</li>
       <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies by performing <strong>tolerance stack-ups</strong> and revising geometry with machinists and fabricators.</li>
-      <li>Designed welding/assembly fixtures and updated build procedures with <strong>redlined drawings</strong>, improving fabrication repeatability and reducing prototype rework.</li>
+      <li>Built on-demand prototypes directly from rough concept sketches, translating informal design intent into functional hardware under tight turnaround.</li>
     </ul>
   </div>
 
@@ -567,7 +568,7 @@ redirect_from:
     <ul>
       <li>Coursework in <strong>biomaterials</strong>, <strong>biomechanics</strong>, and <strong>biomedical devices</strong>, focused on the mechanical, biological, and chemical behavior of engineered systems.</li>
       <li>Performed mechanical testing, failure analysis, and data analysis using <strong>Instron</strong> machines and optical microscopy.</li>
-      <li>Conducted electronics lab coursework using <strong>oscilloscopes</strong> and <strong>digital multimeters</strong>, and ran FEA/simulation coursework in <strong>SolidWorks</strong>, <strong>SolidWorks Simulation</strong>, and <strong>Abaqus</strong>.</li>
+      <li>Completed electronics labs with <strong>oscilloscopes</strong> and <strong>DMMs</strong>, and FEA/simulation coursework in <strong>SolidWorks</strong> and <strong>Abaqus</strong>.</li>
     </ul>
   </div>
 
