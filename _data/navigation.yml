@@ -10,8 +10,6 @@
 main:
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Experience"
-    url: /experience/
   - title: "Resume"
     url: /resume/
 

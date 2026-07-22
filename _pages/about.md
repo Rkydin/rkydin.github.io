@@ -96,121 +96,6 @@ redirect_from:
   white-space: nowrap;
 }
 
-.bp-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1px;
-  background: var(--global-border-color);
-  border: 1px solid var(--global-border-color);
-  margin-bottom: 40px;
-}
-
-.bp-grid a.bp-card {
-  background: var(--global-card-bg-color);
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: var(--global-text-color);
-  transition: background 0.18s ease;
-}
-
-.bp-grid a.bp-card:hover,
-.bp-grid a.bp-card:hover * {
-  text-decoration: none;
-}
-
-.bp-grid a.bp-card:hover {
-  background: var(--global-bg-color);
-}
-
-.bp-card-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 16px;
-}
-
-.bp-card-tag {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.64rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 3px 7px;
-  border: 1px solid var(--global-line-color);
-  color: var(--global-line-color);
-}
-
-.bp-card-sheet {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
-  color: var(--global-text-color-light);
-}
-
-.bp-card-image {
-  height: 168px;
-  border-top: 1px solid var(--global-border-color);
-  border-bottom: 1px solid var(--global-border-color);
-  overflow: hidden;
-}
-
-.bp-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.bp-card:hover .bp-card-image img {
-  transform: scale(1.04);
-}
-
-.bp-card-body {
-  padding: 16px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.bp-card-body h3 {
-  font-size: 1.05em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.bp-card-body p {
-  margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.92em;
-  line-height: 1.5;
-  flex: 1;
-}
-
-.bp-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  border-top: 1px solid var(--global-border-color);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
-}
-
-.bp-card-foot .bp-date { color: var(--global-text-color-light); }
-
-.bp-card-open {
-  color: var(--global-accent-color);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.bp-card-open svg { width: 10px; height: 10px; transition: transform 0.15s ease; }
-.bp-card:hover .bp-card-open svg { transform: translateX(3px); }
-
 .bp-tags-river {
   position: relative;
   overflow: hidden;
@@ -251,6 +136,213 @@ redirect_from:
   color: var(--global-text-color-light);
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+.bp-tree {
+  position: relative;
+  margin: 0 0 40px;
+  padding-left: 0;
+}
+
+.bp-tree::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 8px;
+  width: 2px;
+  background: var(--global-line-color);
+}
+
+.bp-node {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 40px;
+}
+
+.bp-node:last-child {
+  margin-bottom: 0;
+}
+
+.bp-node--media {
+  padding-right: 92px;
+}
+
+.bp-node-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--global-border-color);
+  background: #fff;
+  padding: 10px;
+}
+
+.bp-node-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.bp-node-media--photo {
+  padding: 0;
+}
+
+.bp-node-media--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 540px) {
+  .bp-node--media {
+    padding-right: 44px;
+  }
+
+  .bp-node-media {
+    position: static;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+  }
+}
+
+.bp-photo-river {
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-right: -92px;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent);
+}
+
+.bp-photo-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: bp-river-flow-photo 26s linear infinite;
+}
+
+.bp-photo-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bp-river-flow-photo {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-photo-track {
+    animation: none;
+  }
+}
+
+.bp-photo-track img {
+  height: 140px;
+  width: auto;
+  object-fit: cover;
+  border: 1px solid var(--global-border-color);
+  flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+  .bp-photo-river {
+    margin-right: -44px;
+  }
+
+  .bp-photo-track img {
+    height: 100px;
+  }
+}
+
+.bp-node::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 2px solid var(--global-accent-color);
+  z-index: 1;
+}
+
+.bp-node[data-cat="education"]::before {
+  border-color: var(--global-line-color);
+}
+
+.bp-node::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 11px;
+  width: 30px;
+  height: 2px;
+  background: var(--global-line-color);
+}
+
+.bp-node-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.bp-node-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--global-accent-color);
+  color: var(--global-accent-color);
+}
+
+.bp-node[data-cat="education"] .bp-node-tag {
+  border-color: var(--global-line-color);
+  color: var(--global-line-color);
+}
+
+.bp-node-dates {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+.bp-node h3 {
+  margin: 0 0 4px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.bp-node-org {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86rem;
+  color: var(--global-text-color-light);
+  margin: 0 0 10px;
+}
+
+.bp-node ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bp-node li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.bp-node li:last-child {
+  margin-bottom: 0;
 }
 </style>
 
@@ -310,7 +402,7 @@ redirect_from:
 <div class="bp-titleblock">
   <div class="bp-titleblock-cell">
     <span class="bp-label">Location</span>
-    <span class="bp-value">New Jersey, US — open to relocation</span>
+    <span class="bp-value">Boston, MA — open to relocation</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Next</span>
@@ -327,33 +419,114 @@ redirect_from:
 </div>
 
 <div class="bp-section-head">
-  <h2>Selected Work</h2>
-  <span class="bp-label">{{ site.portfolio.size }} Sheets</span>
+  <h2>Experience</h2>
+  <span class="bp-label">Latest → Earliest</span>
 </div>
 
-<div class="bp-grid">
-{% assign sorted_portfolio = site.portfolio | sort: 'last_updated' | reverse %}
-{% for post in sorted_portfolio %}
-  <a href="{{ post.url | relative_url }}" class="bp-card">
-    <div class="bp-card-strip">
-      <span class="bp-card-tag">{{ post.category | default: "Project" }}</span>
-      <span class="bp-card-sheet">SHT {{ forloop.index | prepend: "00" | slice: -2, 2 }}/{{ site.portfolio.size | prepend: "00" | slice: -2, 2 }}</span>
+<div class="bp-tree">
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/volta.png' | relative_url }}" alt="Volta Space Technologies logo">
     </div>
-    <div class="bp-card-image">
-      {% if post.header.teaser %}
-        <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
-      {% elsif post.image %}
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-      {% endif %}
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Apr 2026 – Jul 2026</span>
     </div>
-    <div class="bp-card-body">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
-      <div class="bp-card-foot">
-        <span class="bp-date">{% if post.date %}{{ post.date | date: "%b %Y" }}{% else %}Ongoing{% endif %}</span>
-        <span class="bp-card-open">Open <svg viewBox="0 0 12 12"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span>
+    <h3>Mechanical Design Intern</h3>
+    <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
+    <ul>
+      <li>Designed a CAD enclosure housing a laser assembly and its associated optical fixtures for shipment and testing, supporting delivery to the European Space Agency (ESA).</li>
+      <li>Gained hands-on exposure to electromechanical assembly, including soldering and cable harnessing, through hardware build support.</li>
+      <li>Developed SolidWorks CAD models and mechanical hardware for internal and electro-optical support applications.</li>
+      <li>Designed optical-mount fixtures and supported hardware development for future thermal vacuum (TVAC) testing.</li>
+      <li>Maintained drawing and BOM revision control through ECOs and redlines, ensuring documentation accuracy across engineering and technical reporting.</li>
+    </ul>
+    <div class="bp-photo-river">
+      <div class="bp-photo-track">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
       </div>
     </div>
-  </a>
-{% endfor %}
+  </div>
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media bp-node-media--photo">
+      <img src="{{ '/images/moleiq/moleiq.png' | relative_url }}" alt="MoleIQ pallet-handling robot">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Nov 2025 – Feb 2026</span>
+    </div>
+    <h3>Mechanical Engineer (Contract, 3 months)</h3>
+    <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
+    <ul>
+      <li>Reduced part count by 15% across pallet-handling robotics assemblies by redesigning and merging components during the metric-to-inch CAD conversion, cutting fabrication and assembly labor.</li>
+      <li>Converted legacy metric CAD assemblies into inch-based production models and ASME Y14.5-compliant drawings within an ISO 9001 quality program.</li>
+      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies by performing tolerance stack-ups and revising geometry with machinists and fabricators.</li>
+      <li>Designed welding/assembly fixtures and updated build procedures with redlined drawings, improving fabrication repeatability and reducing prototype rework.</li>
+    </ul>
+  </div>
+
+  <div class="bp-node" data-cat="experience">
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Apr 2021 – Aug 2021</span>
+    </div>
+    <h3>Research Assistant</h3>
+    <p class="bp-node-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
+    <ul>
+      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, UV-Vis spectrophotometry, and cleanroom laboratory testing.</li>
+    </ul>
+  </div>
+
 </div>
+
+<div class="bp-section-head">
+  <h2>Education</h2>
+  <span class="bp-label">Latest → Earliest</span>
+</div>
+
+<div class="bp-tree">
+
+  <div class="bp-node bp-node--media" data-cat="education">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/northeastern.svg' | relative_url }}" alt="Northeastern University logo">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Education</span>
+      <span class="bp-node-dates">Sep 2026 – May 2028</span>
+    </div>
+    <h3>M.S. Mechanical Engineering — Materials Concentration</h3>
+    <p class="bp-node-org">Northeastern University — Boston, MA</p>
+    <ul>
+      <li>Incoming Fall 2026.</li>
+    </ul>
+  </div>
+
+  <div class="bp-node bp-node--media" data-cat="education">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/rutgers.svg' | relative_url }}" alt="Rutgers University logo">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Education</span>
+      <span class="bp-node-dates">Sep 2021 – May 2025</span>
+    </div>
+    <h3>B.S. Biomedical Engineering</h3>
+    <p class="bp-node-org">Rutgers University, School of Engineering — New Brunswick, NJ</p>
+    <ul>
+      <li>Coursework in biomaterials, biomechanics, and biomedical devices, focused on the mechanical, biological, and chemical behavior of engineered systems.</li>
+      <li>Performed mechanical testing, failure analysis, and data analysis using Instron machines and optical microscopy.</li>
+      <li>Conducted electronics lab coursework using oscilloscopes and digital multimeters, and ran FEA/simulation coursework in SolidWorks, SolidWorks Simulation, and Abaqus.</li>
+    </ul>
+  </div>
+
+</div>
+
+<p class="bp-label">See the full <a href="{{ '/portfolio/' | relative_url }}" style="color: var(--global-accent-color);">project portfolio</a>, or the <a href="{{ '/resume/' | relative_url }}" style="color: var(--global-accent-color);">full resume</a>.</p>
