@@ -26,7 +26,7 @@ header:
 
 ## Project Overview
 
-Focused on converting the MoleIQ pallet-handling robot's legacy metric CAD and drawings to imperial, making DFM modifications along the way to fit the US supply chain and market. Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch — and revised designs to cut part count and ease manufacturability.
+Robomekanics builds automated pallet-moving robots designed to run in fleets. I focused on converting the MoleIQ robot's legacy metric CAD and drawings to imperial, making DFM modifications along the way to fit the US supply chain and market. Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch — and finished assembly documentation, drawings, and CAD ahead of the first 20 units being built and shipped.
 
 <div style="margin: 30px 0;">
   <img src="/images/moleiq/moleiq.png" alt="MoleIQ Product" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
@@ -47,7 +47,7 @@ Focused on converting the MoleIQ pallet-handling robot's legacy metric CAD and d
 
 **On-the-Floor Design:**
 * Worked directly with machinists and fabricators, sometimes translating a napkin or sticky-note sketch into a finished, manufacturable part
-* Supported builds, revisions, and manufacturing release
+* Finished assembly documentation, drawings, and CAD ahead of the first 20 units being built and shipped
 
 ## Skills Applied
 

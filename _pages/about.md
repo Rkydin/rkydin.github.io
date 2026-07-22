@@ -331,6 +331,15 @@ redirect_from:
   margin: 0 0 10px;
 }
 
+.bp-node-mission {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  border-left: 2px solid var(--global-border-color);
+  padding-left: 10px;
+  margin: 0 0 14px;
+}
+
 .bp-node ul {
   margin: 0;
   padding-left: 18px;
@@ -479,6 +488,7 @@ redirect_from:
     </div>
     <h3>Mechanical Design Intern</h3>
     <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
+    <p class="bp-node-mission">Volta is building lunar power infrastructure — beaming power via high-powered proprietary laser and receiver technology.</p>
     <ul>
       <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing, coordinated with the team through the <strong>Microsoft 365</strong> suite.</li>
       <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>, quoting and sourcing the parts to build it.</li>
@@ -512,7 +522,9 @@ redirect_from:
     </div>
     <h3>Mechanical Engineer (Contract, 3 months)</h3>
     <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
+    <p class="bp-node-mission">Robomekanics builds automated pallet-moving robots designed to run in fleets.</p>
     <ul>
+      <li>Finished assembly documentation, drawings, and CAD ahead of the first <strong>20 units</strong> being built and shipped.</li>
       <li>Focused on converting legacy metric CAD assemblies and drawings to imperial, applying <strong>ASME Y14.5-2018</strong> <strong>GD&amp;T</strong> along the way within an <strong>ISO 9001</strong> quality program.</li>
       <li>Made <strong>DFM</strong> modifications suited to the US supply chain and market, redesigning and merging components to reduce part count by <strong>15%</strong> and ease manufacturability.</li>
       <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies through <strong>tolerance stack-ups</strong>, working directly with machinists and fabricators.</li>

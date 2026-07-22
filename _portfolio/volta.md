@@ -26,7 +26,7 @@ header:
 
 ## Project Overview
 
-Mechanical Design Intern supporting Volta's laser-based wireless power beaming hardware — CAD, optical fixture design, vendor sourcing, and hands-on electromechanical build and test support, including an aluminum-extrusion and sheet-metal laser assembly enclosure built for delivery to the European Space Agency.
+Volta is building lunar power infrastructure — beaming power via high-powered proprietary laser and receiver technology. As Mechanical Design Intern, I supported that hardware with CAD, optical fixture design, vendor sourcing, and hands-on electromechanical build and test support, including an aluminum-extrusion and sheet-metal laser assembly enclosure built for delivery to the European Space Agency.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 30px 0;">
   <div>
