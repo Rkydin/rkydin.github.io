@@ -513,7 +513,7 @@ redirect_from:
     <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
     <ul>
       <li>Reduced part count by <strong>15%</strong> across pallet-handling robotics assemblies by redesigning and merging components during the metric-to-inch CAD conversion, cutting fabrication and assembly labor.</li>
-      <li>Converted legacy metric CAD assemblies into inch-based production models and <strong>ASME Y14.5</strong>-compliant drawings within an <strong>ISO 9001</strong> quality program.</li>
+      <li>Converted legacy metric CAD assemblies into inch-based production models and <strong>ASME Y14.5-2018</strong>-compliant drawings within an <strong>ISO 9001</strong> quality program, documented using the <strong>Microsoft 365</strong> suite.</li>
       <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies by performing <strong>tolerance stack-ups</strong> and revising geometry with machinists and fabricators.</li>
       <li>Built on-demand prototypes directly from rough concept sketches, translating informal design intent into functional hardware under tight turnaround.</li>
     </ul>
