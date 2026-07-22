@@ -1,0 +1,265 @@
+---
+title: "Skills"
+permalink: /skills/
+author_profile: true
+---
+
+<style>
+.page__share {
+  display: none !important;
+}
+
+.bp-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 18px;
+}
+
+.bp-eyebrow .bp-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--global-accent-color);
+  flex-shrink: 0;
+}
+
+.bp-intro {
+  max-width: 62ch;
+  font-size: 1.08em;
+  line-height: 1.6;
+  margin-bottom: 44px;
+}
+
+.bp-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.bp-section-head:not(:first-of-type) {
+  margin-top: 48px;
+}
+
+.bp-section-head h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.bp-section-head .bp-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.bp-skill-note {
+  max-width: 62ch;
+  color: var(--global-text-color-light);
+  margin: 0 0 20px;
+  line-height: 1.55;
+}
+
+.bp-cad-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--global-border-color);
+  border: 1px solid var(--global-border-color);
+  margin-bottom: 28px;
+}
+
+.bp-cad-tier {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  padding: 14px 18px;
+  background: var(--global-card-bg-color);
+}
+
+.bp-cad-tier-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  flex: 0 0 auto;
+  width: 220px;
+}
+
+.bp-cad-tier-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+@media (max-width: 620px) {
+  .bp-cad-tier-label {
+    width: 100%;
+  }
+}
+
+.bp-tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.bp-tag--primary {
+  border-color: var(--global-accent-color);
+  color: var(--global-accent-color);
+  font-weight: 500;
+}
+
+.bp-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--global-border-color);
+  border: 1px solid var(--global-border-color);
+  margin-bottom: 12px;
+}
+
+.bp-skill-group {
+  background: var(--global-card-bg-color);
+  padding: 18px 20px;
+}
+
+.bp-skill-group h3 {
+  margin: 0 0 8px;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bp-skill-group p {
+  margin: 0 0 12px;
+  color: var(--global-text-color-light);
+  font-size: 0.88em;
+  line-height: 1.5;
+}
+
+.bp-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+</style>
+
+<div class="bp-eyebrow">
+  <span class="bp-dot"></span>
+  <span>Skills — Tools &amp; Proficiency</span>
+</div>
+
+<div class="bp-intro">
+  <p>What I actually use day to day, versus what I could pick up quickly given the overlap with tools I already know.</p>
+</div>
+
+<div class="bp-section-head">
+  <h2>Parametric CAD</h2>
+  <span class="bp-label">By Proficiency</span>
+</div>
+
+<p class="bp-skill-note">SolidWorks is my daily driver — four years of parts, assemblies, and production drawings. Siemens NX is real hands-on experience too. Fusion 360 and FreeCAD I haven't used professionally, but they're the same parametric-modeling paradigm, so I'd expect to be productive in either quickly.</p>
+
+<div class="bp-cad-tiers">
+  <div class="bp-cad-tier">
+    <span class="bp-cad-tier-label">Primary</span>
+    <div class="bp-cad-tier-tools">
+      <span class="bp-tag bp-tag--primary">SolidWorks</span>
+    </div>
+  </div>
+  <div class="bp-cad-tier">
+    <span class="bp-cad-tier-label">Also Used</span>
+    <div class="bp-cad-tier-tools">
+      <span class="bp-tag">Siemens NX</span>
+    </div>
+  </div>
+  <div class="bp-cad-tier">
+    <span class="bp-cad-tier-label">Same Paradigm — Fast Ramp-Up</span>
+    <div class="bp-cad-tier-tools">
+      <span class="bp-tag">Fusion 360</span>
+      <span class="bp-tag">FreeCAD</span>
+    </div>
+  </div>
+</div>
+
+<div class="bp-section-head">
+  <h2>Mechanical Design &amp; Analysis</h2>
+  <span class="bp-label">Documentation / Simulation</span>
+</div>
+
+<p class="bp-skill-note">Production drawings, tolerancing, and simulation work that goes with the CAD above.</p>
+
+<div class="bp-skill-tags" style="margin-bottom: 40px;">
+  <span class="bp-tag">GD&amp;T</span>
+  <span class="bp-tag">Tolerance Stack-Ups</span>
+  <span class="bp-tag">2D Drawings</span>
+  <span class="bp-tag">BOM Management</span>
+  <span class="bp-tag">DFM</span>
+  <span class="bp-tag">DFA</span>
+  <span class="bp-tag">FEA</span>
+  <span class="bp-tag">SolidWorks Simulation</span>
+  <span class="bp-tag">Abaqus</span>
+</div>
+
+<div class="bp-section-head">
+  <h2>Manufacturing</h2>
+</div>
+
+<p class="bp-skill-note">Hands-on production support — first-article builds, fixture design, and root-cause work on fit-up and assembly issues.</p>
+
+<div class="bp-skill-tags" style="margin-bottom: 40px;">
+  <span class="bp-tag">Prototype Assembly</span>
+  <span class="bp-tag">Fixture Design</span>
+  <span class="bp-tag">Root Cause Analysis</span>
+  <span class="bp-tag">ISO 9001</span>
+</div>
+
+<div class="bp-section-head">
+  <h2>Laboratory</h2>
+</div>
+
+<p class="bp-skill-note">Testing and failure-analysis background from both biomedical coursework and mechanical engineering work.</p>
+
+<div class="bp-skill-tags" style="margin-bottom: 40px;">
+  <span class="bp-tag">Mechanical Testing</span>
+  <span class="bp-tag">Failure Analysis</span>
+  <span class="bp-tag">Data Analysis</span>
+  <span class="bp-tag">Instron Testing</span>
+  <span class="bp-tag">Optical Microscopy</span>
+  <span class="bp-tag">GLP</span>
+  <span class="bp-tag">Oscilloscopes</span>
+  <span class="bp-tag">DMM</span>
+</div>
+
+<div class="bp-section-head">
+  <h2>Programming</h2>
+</div>
+
+<p class="bp-skill-note">Python for computer-vision and desktop tooling (OpenCV), MATLAB for kinematics modeling, C++ for embedded and robotics work.</p>
+
+<div class="bp-skill-tags">
+  <span class="bp-tag">Python</span>
+  <span class="bp-tag">MATLAB</span>
+  <span class="bp-tag">C++</span>
+</div>

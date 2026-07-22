@@ -345,6 +345,11 @@ redirect_from:
   margin-bottom: 0;
 }
 
+.bp-node li strong {
+  color: var(--global-accent-color);
+  font-weight: 600;
+}
+
 .bp-cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -383,32 +388,6 @@ redirect_from:
   color: var(--global-accent-color);
 }
 
-.bp-skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1px;
-  background: var(--global-border-color);
-  border: 1px solid var(--global-border-color);
-  margin-bottom: 40px;
-}
-
-.bp-skill-group {
-  background: var(--global-card-bg-color);
-  padding: 18px 20px;
-}
-
-.bp-skill-group h3 {
-  margin: 0 0 12px;
-  font-size: 0.95em;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.bp-skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
 </style>
 
 <div class="bp-eyebrow">
@@ -592,63 +571,6 @@ redirect_from:
     </ul>
   </div>
 
-</div>
-
-<div class="bp-section-head">
-  <h2>Skills</h2>
-  <span class="bp-label">By Category</span>
-</div>
-
-<div class="bp-skills-grid">
-  <div class="bp-skill-group">
-    <h3>Mechanical Design</h3>
-    <div class="bp-skill-tags">
-      <span class="bp-tag">GD&amp;T</span>
-      <span class="bp-tag">Tolerance Stack-Ups</span>
-      <span class="bp-tag">2D Drawings</span>
-      <span class="bp-tag">SolidWorks</span>
-      <span class="bp-tag">Siemens NX</span>
-      <span class="bp-tag">SolidWorks Simulation</span>
-      <span class="bp-tag">Abaqus</span>
-      <span class="bp-tag">DFM</span>
-      <span class="bp-tag">DFA</span>
-      <span class="bp-tag">FEA</span>
-      <span class="bp-tag">BOM Management</span>
-    </div>
-  </div>
-
-  <div class="bp-skill-group">
-    <h3>Manufacturing</h3>
-    <div class="bp-skill-tags">
-      <span class="bp-tag">Prototype Assembly</span>
-      <span class="bp-tag">Fixture Design</span>
-      <span class="bp-tag">Root Cause Analysis</span>
-      <span class="bp-tag">ISO 9001</span>
-    </div>
-  </div>
-
-  <div class="bp-skill-group">
-    <h3>Laboratory</h3>
-    <div class="bp-skill-tags">
-      <span class="bp-tag">Mechanical Testing</span>
-      <span class="bp-tag">Failure Analysis</span>
-      <span class="bp-tag">Data Analysis</span>
-      <span class="bp-tag">Instron Testing</span>
-      <span class="bp-tag">Optical Microscopy</span>
-      <span class="bp-tag">GLP</span>
-      <span class="bp-tag">Oscilloscopes</span>
-      <span class="bp-tag">DMM</span>
-    </div>
-  </div>
-
-  <div class="bp-skill-group">
-    <h3>Programming</h3>
-    <div class="bp-skill-tags">
-      <span class="bp-tag">Python</span>
-      <span class="bp-tag">MATLAB</span>
-      <span class="bp-tag">C++</span>
-    </div>
-  </div>
 </div>
 
 <div class="bp-cta-row">
