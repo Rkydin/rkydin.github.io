@@ -405,7 +405,7 @@ redirect_from:
 </div>
 
 <div class="bp-intro">
-  <p>I'm a Rutgers BME graduate now pursuing an MS in Mechanical Engineering with a concentration in Materials at Northeastern, splitting my time between coursework and part-time research in the Weissbourd Lab at MIT and the MicronRF Lab at Northeastern. Along the way I've picked up hands-on startup experience — building hardware at early-stage companies like Volta Space Technologies and Robomekanics — which has pushed me to grow beyond design alone into more theoretical and R&amp;D-focused engineering. I've been designing in CAD for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. My interests still span space, robotics, MEMS, and energy systems — looking to fill this page with projects that push the boundaries of what's possible.</p>
+  <p>I'm a Rutgers BME graduate now pursuing an MS in Mechanical Engineering with a concentration in Materials at Northeastern, splitting my time between coursework and part-time research in the Weissbourd Lab at MIT and the MicronRF Lab at Northeastern. Along the way I've picked up hands-on startup experience building hardware at early-stage companies like Volta Space Technologies and Robomekanics, which pushed me to grow beyond design alone into more theoretical, R&amp;D-focused engineering. I've been designing in CAD for about four years, work across a few programming languages, and build hardware using 3D-printed parts. My interests still span space, robotics, MEMS, and energy systems. I'm looking to fill this page with projects that push the boundaries of what's possible.</p>
   <div class="bp-tags-river">
     <div class="bp-tags-track">
       <span class="bp-tag">GD&amp;T</span>
@@ -458,7 +458,7 @@ redirect_from:
 <div class="bp-titleblock">
   <div class="bp-titleblock-cell">
     <span class="bp-label">Location</span>
-    <span class="bp-value">Boston, MA — open to relocation</span>
+    <span class="bp-value">Boston, MA</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Now</span>
@@ -494,7 +494,6 @@ redirect_from:
     <ul>
       <li>Designing and manufacturing mechanical test setups to observe <strong>Clytia</strong> jellyfish and their neuron activity, using <strong>microcontrollers</strong> for data collection and MIT makerspace facilities for fabrication.</li>
     </ul>
-    <p><a href="{{ '/experience/mit-weissbourd/' | relative_url }}">Read full write-up →</a></p>
   </div>
 
   <div class="bp-node bp-node--media" data-cat="experience">
@@ -510,7 +509,6 @@ redirect_from:
     <ul>
       <li>Characterizing silicon-wafer <strong>nano-gyroscopes</strong> to study displacement and intensity response, where larger displacement indicates better device performance, as part of ongoing lab research.</li>
     </ul>
-    <p><a href="{{ '/experience/micronrf/' | relative_url }}">Read full write-up →</a></p>
   </div>
 
   <div class="bp-node bp-node--media" data-cat="experience">
@@ -545,7 +543,6 @@ redirect_from:
         <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
       </div>
     </div>
-    <p><a href="{{ '/experience/volta/' | relative_url }}">Read full write-up →</a></p>
   </div>
 
   <div class="bp-node bp-node--media" data-cat="experience">
@@ -567,7 +564,6 @@ redirect_from:
       <li>Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch.</li>
       <li>Used the <strong>Microsoft 365</strong> suite for team meetings, documentation, and coordination throughout.</li>
     </ul>
-    <p><a href="{{ '/experience/moleiq/' | relative_url }}">Read full write-up →</a></p>
   </div>
 
   <div class="bp-node" data-cat="experience">
@@ -580,7 +576,6 @@ redirect_from:
     <ul>
       <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, and <strong>fluorescent microscopy</strong>.</li>
     </ul>
-    <p><a href="{{ '/experience/lamont-doherty/' | relative_url }}">Read full write-up →</a></p>
   </div>
 
 </div>
