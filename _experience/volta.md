@@ -2,11 +2,12 @@
 title: "Volta Space Technologies - Laser Power Beaming Hardware"
 excerpt: "Mechanical design support for laser wireless power beaming hardware, including a sheet-metal enclosure built for delivery to the European Space Agency."
 category: "Space"
+status: "Complete"
 skills: ["SolidWorks", "Fusion 360", "GD&T", "Vendor Sourcing"]
 date: 2026-07-01
 last_updated: 2026-07-22
-collection: portfolio
-layout: portfolio
+collection: experience
+layout: experience
 author_profile: true
 share: false
 header:

@@ -475,6 +475,117 @@ redirect_from:
 </div>
 
 <div class="bp-section-head">
+  <h2>Experience</h2>
+  <span class="bp-label">Latest → Earliest</span>
+</div>
+
+<div class="bp-tree">
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/mit.svg' | relative_url }}" alt="MIT logo">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Sep 2026 – Present</span>
+    </div>
+    <h3>Student Researcher (Part-Time)</h3>
+    <p class="bp-node-org">MIT — Weissbourd Lab, Cambridge, MA</p>
+    <ul>
+      <li>Designing and manufacturing mechanical test setups to observe <strong>Clytia</strong> jellyfish and their neuron activity, using <strong>microcontrollers</strong> for data collection and MIT makerspace facilities for fabrication.</li>
+    </ul>
+    <p><a href="{{ '/experience/mit-weissbourd/' | relative_url }}">Read full write-up →</a></p>
+  </div>
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/northeastern.svg' | relative_url }}" alt="Northeastern University logo">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Sep 2026 – Present</span>
+    </div>
+    <h3>Student Researcher (Part-Time)</h3>
+    <p class="bp-node-org">Northeastern University — MicronRF Lab, Boston, MA</p>
+    <ul>
+      <li>Characterizing silicon-wafer <strong>nano-gyroscopes</strong> to study displacement and intensity response, where larger displacement indicates better device performance, as part of ongoing lab research.</li>
+    </ul>
+    <p><a href="{{ '/experience/micronrf/' | relative_url }}">Read full write-up →</a></p>
+  </div>
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media">
+      <img src="{{ '/images/logos/volta.png' | relative_url }}" alt="Volta Space Technologies logo">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Apr 2026 – Jul 2026</span>
+    </div>
+    <h3>Mechanical Design Intern</h3>
+    <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
+    <p class="bp-node-mission">Volta is building lunar power infrastructure — beaming power via high-powered proprietary laser and receiver technology.</p>
+    <ul>
+      <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing, coordinated with the team through the <strong>Microsoft 365</strong> suite.</li>
+      <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>, quoting and sourcing the parts to build it.</li>
+      <li>Designed optical-mount fixtures for fibers, lasers, lenses, and mirrors, supporting both test setups and safe transport of hardware, with <strong>GD&amp;T</strong> tolerancing ahead of future <strong>TVAC</strong> testing.</li>
+      <li>Ran the shop <strong>3D printer</strong> for rapid part prototyping as well as marketing and demo material.</li>
+      <li>Supported the team on general electromechanical build work, picking up <strong>soldering</strong> and <strong>cable harnessing</strong> along the way.</li>
+    </ul>
+    <div class="bp-photo-river">
+      <div class="bp-photo-track">
+        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
+        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
+        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
+        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
+        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
+      </div>
+    </div>
+    <p><a href="{{ '/experience/volta/' | relative_url }}">Read full write-up →</a></p>
+  </div>
+
+  <div class="bp-node bp-node--media" data-cat="experience">
+    <div class="bp-node-media bp-node-media--photo">
+      <img src="{{ '/images/moleiq/moleiq.png' | relative_url }}" alt="MoleIQ pallet-handling robot">
+    </div>
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Nov 2025 – Feb 2026</span>
+    </div>
+    <h3>Mechanical Engineer (Contract, 3 months)</h3>
+    <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
+    <p class="bp-node-mission">Robomekanics builds automated pallet-moving robots designed to run in fleets.</p>
+    <ul>
+      <li>Finished assembly documentation, drawings, and CAD ahead of the first <strong>20 units</strong> being built and shipped.</li>
+      <li>Focused on converting legacy metric CAD assemblies and drawings to imperial, applying <strong>ASME Y14.5-2018</strong> <strong>GD&amp;T</strong> along the way within an <strong>ISO 9001</strong> quality program.</li>
+      <li>Made <strong>DFM</strong> modifications suited to the US supply chain and market, redesigning and merging components to reduce part count by <strong>15%</strong> and ease manufacturability.</li>
+      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies through <strong>tolerance stack-ups</strong>, working directly with machinists and fabricators.</li>
+      <li>Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch.</li>
+      <li>Used the <strong>Microsoft 365</strong> suite for team meetings, documentation, and coordination throughout.</li>
+    </ul>
+    <p><a href="{{ '/experience/moleiq/' | relative_url }}">Read full write-up →</a></p>
+  </div>
+
+  <div class="bp-node" data-cat="experience">
+    <div class="bp-node-head">
+      <span class="bp-node-tag">Experience</span>
+      <span class="bp-node-dates">Apr 2021 – Aug 2021</span>
+    </div>
+    <h3>Research Assistant</h3>
+    <p class="bp-node-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
+    <ul>
+      <li>Supported research on microplastic contamination in consumer detergents through sample preparation, filtration, and <strong>fluorescent microscopy</strong>.</li>
+    </ul>
+    <p><a href="{{ '/experience/lamont-doherty/' | relative_url }}">Read full write-up →</a></p>
+  </div>
+
+</div>
+
+<div class="bp-section-head">
   <h2>Education</h2>
   <span class="bp-label">Latest → Earliest</span>
 </div>
