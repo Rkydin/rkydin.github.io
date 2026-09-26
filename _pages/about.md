@@ -483,7 +483,7 @@ redirect_from:
 
   <div class="bp-node bp-node--media" data-cat="experience">
     <div class="bp-node-media">
-      <img src="{{ '/images/logos/mit.svg' | relative_url }}" alt="MIT logo">
+      <img src="{{ '/images/logos/mit.jpg' | relative_url }}" alt="MIT logo">
     </div>
     <div class="bp-node-head">
       <span class="bp-node-tag">Experience</span>

@@ -11,7 +11,7 @@ layout: experience
 author_profile: true
 share: false
 header:
-  teaser: /images/logos/mit.svg
+  teaser: /images/logos/mit.jpg
 teaser_logo: true
 ---
 
