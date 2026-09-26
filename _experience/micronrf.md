@@ -10,6 +10,9 @@ collection: experience
 layout: experience
 author_profile: true
 share: false
+header:
+  teaser: /images/logos/northeastern.svg
+teaser_logo: true
 ---
 
 <style>

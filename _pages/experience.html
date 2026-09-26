@@ -79,6 +79,16 @@ author_profile: true
   transform: scale(1.04);
 }
 
+.bp-card-image--logo {
+  background: #fff;
+}
+
+.bp-card-image--logo img {
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
 .bp-card-body {
   padding: 16px;
   flex: 1;
@@ -186,7 +196,7 @@ author_profile: true
       <span class="bp-card-tag{% if post.status == 'In Progress' %} bp-card-wip{% endif %}">{{ post.category | default: "Role" }}</span>
       <span class="bp-card-sheet">SHT {{ forloop.index | prepend: "00" | slice: -2, 2 }}/{{ site.experience.size | prepend: "00" | slice: -2, 2 }}</span>
     </div>
-    <div class="bp-card-image">
+    <div class="bp-card-image{% if post.teaser_logo %} bp-card-image--logo{% endif %}">
       {% if post.header.teaser %}
         <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
       {% elsif post.image %}
