@@ -28,6 +28,6 @@ teaser_logo: true
 
 ## Project Overview
 
-Designing and manufacturing mechanical test setups to accurately observe Clytia jellyfish and their neuron activity, using microcontrollers for data collection and MIT makerspace facilities for fabrication.
+Designing and manufacturing mechanical test setups to accurately observe Clytia jellyfish and their neuron activity.
 
 *Full write-up and results coming soon as this research develops.*

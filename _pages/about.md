@@ -492,7 +492,7 @@ redirect_from:
     <h3>Student Researcher (Part-Time)</h3>
     <p class="bp-node-org">MIT — Weissbourd Lab, Cambridge, MA</p>
     <ul>
-      <li>Designing and manufacturing mechanical test setups to observe <strong>Clytia</strong> jellyfish and their neuron activity, using <strong>microcontrollers</strong> for data collection and MIT makerspace facilities for fabrication.</li>
+      <li>Designing and manufacturing mechanical test setups to accurately observe <strong>Clytia</strong> jellyfish and their neuron activity.</li>
     </ul>
   </div>
 
