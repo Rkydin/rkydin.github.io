@@ -405,7 +405,7 @@ redirect_from:
 </div>
 
 <div class="bp-intro">
-  <p>I'm a Rutgers BME graduate working as a mechanical designer, and I'm working to grow beyond design alone into more theoretical and R&amp;D-focused engineering. I'll be starting an MS in Mechanical Engineering with a concentration in Materials at Northeastern this fall. I've been designing in CAD for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. My interests span space, robotics, MEMS, and energy systems — looking to fill this page with projects that push the boundaries of what's possible.</p>
+  <p>I'm a Rutgers BME graduate now pursuing an MS in Mechanical Engineering with a concentration in Materials at Northeastern, splitting my time between coursework and part-time research in the Weissbourd Lab at MIT and the MicronRF Lab at Northeastern. Along the way I've picked up hands-on startup experience — building hardware at early-stage companies like Volta Space Technologies and Robomekanics — which has pushed me to grow beyond design alone into more theoretical and R&amp;D-focused engineering. I've been designing in CAD for about four years, work across a few programming languages, and build and develop hardware using 3D-printed parts. My interests still span space, robotics, MEMS, and energy systems — looking to fill this page with projects that push the boundaries of what's possible.</p>
   <div class="bp-tags-river">
     <div class="bp-tags-track">
       <span class="bp-tag">GD&amp;T</span>
@@ -415,6 +415,7 @@ redirect_from:
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
+      <span class="bp-tag">CFD</span>
       <span class="bp-tag">Abaqus</span>
       <span class="bp-tag">Oscilloscopes</span>
       <span class="bp-tag">3D Printing</span>
@@ -428,6 +429,7 @@ redirect_from:
       <span class="bp-tag">Python</span>
       <span class="bp-tag">MATLAB</span>
       <span class="bp-tag">C++</span>
+      <span class="bp-tag">Microcontrollers</span>
       <span class="bp-tag">GD&amp;T</span>
       <span class="bp-tag">Tolerance Analysis</span>
       <span class="bp-tag">SolidWorks</span>
@@ -435,6 +437,7 @@ redirect_from:
       <span class="bp-tag">DFM</span>
       <span class="bp-tag">DFA</span>
       <span class="bp-tag">FEA</span>
+      <span class="bp-tag">CFD</span>
       <span class="bp-tag">Abaqus</span>
       <span class="bp-tag">Oscilloscopes</span>
       <span class="bp-tag">3D Printing</span>
@@ -458,8 +461,8 @@ redirect_from:
     <span class="bp-value">Boston, MA — open to relocation</span>
   </div>
   <div class="bp-titleblock-cell">
-    <span class="bp-label">Next</span>
-    <span class="bp-value">MS ME (Materials), Northeastern — Fall 2026</span>
+    <span class="bp-label">Now</span>
+    <span class="bp-value">MS ME (Materials), Northeastern — In Progress</span>
   </div>
   <div class="bp-titleblock-cell">
     <span class="bp-label">Focus</span>
@@ -469,82 +472,6 @@ redirect_from:
     <span class="bp-label">Primary Tool</span>
     <span class="bp-value">CAD — 4 yrs</span>
   </div>
-</div>
-
-<div class="bp-section-head">
-  <h2>Experience</h2>
-  <span class="bp-label">Latest → Earliest</span>
-</div>
-
-<div class="bp-tree">
-
-  <div class="bp-node bp-node--media" data-cat="experience">
-    <div class="bp-node-media">
-      <img src="{{ '/images/logos/volta.png' | relative_url }}" alt="Volta Space Technologies logo">
-    </div>
-    <div class="bp-node-head">
-      <span class="bp-node-tag">Experience</span>
-      <span class="bp-node-dates">Apr 2026 – Jul 2026</span>
-    </div>
-    <h3>Mechanical Design Intern</h3>
-    <p class="bp-node-org">Volta Space Technologies — Broomfield, CO</p>
-    <p class="bp-node-mission">Volta is building lunar power infrastructure — beaming power via high-powered proprietary laser and receiver technology.</p>
-    <ul>
-      <li>Owned documentation for parts and models across the build — <strong>SolidWorks</strong> drawings feeding spec sheets, vendor quoting, and invoicing, coordinated with the team through the <strong>Microsoft 365</strong> suite.</li>
-      <li>Designed and built a laser assembly enclosure from aluminum extrusions and sheet metal in <strong>SolidWorks</strong> for delivery to the <strong>European Space Agency</strong>, quoting and sourcing the parts to build it.</li>
-      <li>Designed optical-mount fixtures for fibers, lasers, lenses, and mirrors, supporting both test setups and safe transport of hardware, with <strong>GD&amp;T</strong> tolerancing ahead of future <strong>TVAC</strong> testing.</li>
-      <li>Ran the shop <strong>3D printer</strong> for rapid part prototyping as well as marketing and demo material.</li>
-      <li>Supported the team on general electromechanical build work, picking up <strong>soldering</strong> and <strong>cable harnessing</strong> along the way.</li>
-    </ul>
-    <div class="bp-photo-river">
-      <div class="bp-photo-track">
-        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
-        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
-        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
-        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
-        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
-        <img src="{{ '/images/volta/esa-enclosure.jpg' | relative_url }}" alt="ESA laser assembly enclosure, aluminum extrusion and sheet metal">
-        <img src="{{ '/images/volta/optics-fixture.jpg' | relative_url }}" alt="3D-printed optical fixture on a test bench">
-        <img src="{{ '/images/volta/gantry-control-setup.jpg' | relative_url }}" alt="Laser gantry control software setup">
-        <img src="{{ '/images/volta/beaming-demo.jpg' | relative_url }}" alt="Wireless power beaming demo across the test hangar">
-        <img src="{{ '/images/volta/receiver-panel.jpg' | relative_url }}" alt="Laser striking the photovoltaic receiver panel">
-      </div>
-    </div>
-  </div>
-
-  <div class="bp-node bp-node--media" data-cat="experience">
-    <div class="bp-node-media bp-node-media--photo">
-      <img src="{{ '/images/moleiq/moleiq.png' | relative_url }}" alt="MoleIQ pallet-handling robot">
-    </div>
-    <div class="bp-node-head">
-      <span class="bp-node-tag">Experience</span>
-      <span class="bp-node-dates">Nov 2025 – Feb 2026</span>
-    </div>
-    <h3>Mechanical Engineer (Contract, 3 months)</h3>
-    <p class="bp-node-org">Robomekanics — Teterboro, NJ</p>
-    <p class="bp-node-mission">Robomekanics builds automated pallet-moving robots designed to run in fleets.</p>
-    <ul>
-      <li>Finished assembly documentation, drawings, and CAD ahead of the first <strong>20 units</strong> being built and shipped.</li>
-      <li>Focused on converting legacy metric CAD assemblies and drawings to imperial, applying <strong>ASME Y14.5-2018</strong> <strong>GD&amp;T</strong> along the way within an <strong>ISO 9001</strong> quality program.</li>
-      <li>Made <strong>DFM</strong> modifications suited to the US supply chain and market, redesigning and merging components to reduce part count by <strong>15%</strong> and ease manufacturability.</li>
-      <li>Resolved fit-up, interference, and failure issues on sheet-metal and welded assemblies through <strong>tolerance stack-ups</strong>, working directly with machinists and fabricators.</li>
-      <li>Worked across models, CAD, and drawings — sometimes starting from nothing more than a machinist's napkin or sticky-note sketch.</li>
-      <li>Used the <strong>Microsoft 365</strong> suite for team meetings, documentation, and coordination throughout.</li>
-    </ul>
-  </div>
-
-  <div class="bp-node" data-cat="experience">
-    <div class="bp-node-head">
-      <span class="bp-node-tag">Experience</span>
-      <span class="bp-node-dates">Apr 2021 – Aug 2021</span>
-    </div>
-    <h3>Research Assistant</h3>
-    <p class="bp-node-org">Lamont-Doherty Earth Observatory — Palisades, NY</p>
-    <ul>
-      <li>Researched and tested for the presence and quantity of microplastics in consumer detergents and locally caught seafood, through sample preparation, filtration, <strong>UV-Vis spectrophotometry</strong>, and cleanroom laboratory testing.</li>
-    </ul>
-  </div>
-
 </div>
 
 <div class="bp-section-head">
@@ -565,7 +492,7 @@ redirect_from:
     <h3>M.S. Mechanical Engineering — Materials Concentration</h3>
     <p class="bp-node-org">Northeastern University — Boston, MA</p>
     <ul>
-      <li>Incoming Fall 2026.</li>
+      <li>Began coursework Fall 2026, concurrent with part-time research in the MicronRF Lab and the Weissbourd Lab at MIT.</li>
     </ul>
   </div>
 
@@ -589,6 +516,7 @@ redirect_from:
 </div>
 
 <div class="bp-cta-row">
-  <a href="{{ '/portfolio/' | relative_url }}" class="bp-btn bp-btn--solid">View Full Portfolio →</a>
+  <a href="{{ '/experience/' | relative_url }}" class="bp-btn bp-btn--solid">View Work Experience →</a>
+  <a href="{{ '/portfolio/' | relative_url }}" class="bp-btn bp-btn--outline">View Full Portfolio →</a>
   <a href="{{ '/resume/' | relative_url }}" class="bp-btn bp-btn--outline">Full Resume →</a>
 </div>
