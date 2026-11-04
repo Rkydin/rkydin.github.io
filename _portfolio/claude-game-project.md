@@ -100,6 +100,6 @@ dummy's attacks.
 **Problems solved**
 
 * **Blocks sometimes judged the wrong side.** Fast sweeps were occasionally read as coming from the opposite side. Hit judging now follows the moment the blade first reaches the defender, tested from every direction around the player.
-* **Parrying was too easy.** It first came from switching guard at the last moment, which rewarded mashing. It moved to a deliberate button, with a short lockout for presses that don't meet an attack.
+* **Parrying was too easy.** You could parry by spamming guard switches. Parry now has its own button, and missed presses briefly disable it.
 * **Inputs got lost mid-swing.** The game now remembers your latest press and acts on it as soon as the swing allows.
 * **The overhead trail was invisible.** A perfectly vertical swing lines up with the first-person camera, so vertical swings now come down slightly off center.
